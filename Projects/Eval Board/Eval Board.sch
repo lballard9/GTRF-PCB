@@ -1004,4 +1004,12 @@ F 3 "~" H 2400 3750 50  0001 C CNN
 $EndComp
 Text GLabel 2600 3550 2    50   Input ~ 0
 REF
+Text Label 4450 4800 0    50   ~ 0
+RF+
+Text Label 4450 5150 0    50   ~ 0
+RF-
+Text Label 7050 4050 0    50   ~ 0
+LO+
+Text Label 7050 4350 0    50   ~ 0
+LO-
 $EndSCHEMATC
