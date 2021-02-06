@@ -7,20 +7,20 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.9)-1"
     },
-    "CreationDate":  "2021-02-06T16:33:29-05:00"
+    "CreationDate":  "2021-02-06T18:12:04-05:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "LNA2",
-      "GUID": "4c4e4132-2e6b-4696-9361-645f70636258",
+      "Name": "DemodulatorCircuit",
+      "GUID": "44656d6f-6475-46c6-9174-6f7243697263",
       "Revision": "rev?"
     },
     "Size":
     {
-      "X": 26.937,
-      "Y": 47.929
+      "X": 58.470,
+      "Y": 40.690
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -33,54 +33,54 @@
       "PadToTrack":  0.200,
       "TrackToTrack":  0.200,
       "MinLineWidth":  0.250,
-      "TrackToRegion":  0.200,
-      "RegionToRegion":  0.200
+      "TrackToRegion":  0.508,
+      "RegionToRegion":  0.508
     }
   ],
   "FilesAttributes":
   [
     {
-      "Path":  "LNA2-F_Cu.gbr",
+      "Path":  "DemodulatorCircuit-F_Cu.gbr",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "LNA2-B_Cu.gbr",
+      "Path":  "DemodulatorCircuit-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "LNA2-F_Paste.gbr",
+      "Path":  "DemodulatorCircuit-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "LNA2-B_Paste.gbr",
+      "Path":  "DemodulatorCircuit-B_Paste.gbr",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "LNA2-F_SilkS.gbr",
+      "Path":  "DemodulatorCircuit-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "LNA2-B_SilkS.gbr",
+      "Path":  "DemodulatorCircuit-B_SilkS.gbr",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "LNA2-F_Mask.gbr",
+      "Path":  "DemodulatorCircuit-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "LNA2-B_Mask.gbr",
+      "Path":  "DemodulatorCircuit-B_Mask.gbr",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "LNA2-Edge_Cuts.gbr",
+      "Path":  "DemodulatorCircuit-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }
