@@ -1,0 +1,296 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transformer:ETC1-1-13 TR1
+U 1 1 602250EC
+P 3550 2200
+F 0 "TR1" H 3550 2481 50  0000 C CNN
+F 1 "ETC1-1-13" H 3550 2390 50  0000 C CNN
+F 2 "Transformer_SMD:Transformer_MACOM_SM-22" H 3550 2450 50  0001 C CNN
+F 3 "https://cdn.macom.com/datasheets/ETC1-1-13.pdf" V 3550 2200 50  0001 C CNN
+	1    3550 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 60226667
+P 3350 2200
+F 0 "#PWR0133" H 3350 1950 50  0001 C CNN
+F 1 "GND" V 3355 2072 50  0000 R CNN
+F 2 "" H 3350 2200 50  0001 C CNN
+F 3 "" H 3350 2200 50  0001 C CNN
+	1    3350 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 602273AC
+P 3750 2300
+F 0 "#PWR0134" H 3750 2050 50  0001 C CNN
+F 1 "GND" H 3755 2127 50  0000 C CNN
+F 2 "" H 3750 2300 50  0001 C CNN
+F 3 "" H 3750 2300 50  0001 C CNN
+	1    3750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2100 2700 2100
+Wire Wire Line
+	3350 2300 2700 2300
+Text Label 2700 2100 0    50   ~ 0
+I+
+Text Label 2700 2300 0    50   ~ 0
+I-
+Text Label 4750 2100 0    50   ~ 0
+I_Single_Ended
+$Comp
+L Device:L L1
+U 1 1 60231988
+P 5550 2100
+F 0 "L1" V 5369 2100 50  0000 C CNN
+F 1 "470nH" V 5460 2100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 5550 2100 50  0001 C CNN
+F 3 "~" H 5550 2100 50  0001 C CNN
+	1    5550 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C_Filter2
+U 1 1 60232846
+P 5800 2300
+F 0 "C_Filter2" H 5915 2346 50  0000 L CNN
+F 1 "160pF" H 5915 2255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5838 2150 50  0001 C CNN
+F 3 "~" H 5800 2300 50  0001 C CNN
+	1    5800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C_Filter1
+U 1 1 60233083
+P 5250 2300
+F 0 "C_Filter1" H 5365 2346 50  0000 L CNN
+F 1 "160pF" H 5365 2255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 2150 50  0001 C CNN
+F 3 "~" H 5250 2300 50  0001 C CNN
+	1    5250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2100 4300 2100
+Wire Wire Line
+	5250 2150 5250 2100
+Connection ~ 5250 2100
+Wire Wire Line
+	5250 2100 5400 2100
+Wire Wire Line
+	5800 2150 5800 2100
+Wire Wire Line
+	5800 2100 5700 2100
+$Comp
+L power:GND #PWR0135
+U 1 1 60233BC6
+P 5250 2450
+F 0 "#PWR0135" H 5250 2200 50  0001 C CNN
+F 1 "GND" H 5255 2277 50  0000 C CNN
+F 2 "" H 5250 2450 50  0001 C CNN
+F 3 "" H 5250 2450 50  0001 C CNN
+	1    5250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 602342D8
+P 5800 2500
+F 0 "#PWR0136" H 5800 2250 50  0001 C CNN
+F 1 "GND" H 5805 2327 50  0000 C CNN
+F 2 "" H 5800 2500 50  0001 C CNN
+F 3 "" H 5800 2500 50  0001 C CNN
+	1    5800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CC_Filter2
+U 1 1 60234B4A
+P 4450 2100
+F 0 "CC_Filter2" V 4198 2100 50  0000 C CNN
+F 1 ".47uF" V 4289 2100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 1950 50  0001 C CNN
+F 3 "~" H 4450 2100 50  0001 C CNN
+	1    4450 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 2100 5250 2100
+$Comp
+L Transformer:ETC1-1-13 TR2
+U 1 1 6024435B
+P 3550 1400
+F 0 "TR2" H 3550 1681 50  0000 C CNN
+F 1 "ETC1-1-13" H 3550 1590 50  0000 C CNN
+F 2 "Transformer_SMD:Transformer_MACOM_SM-22" H 3550 1650 50  0001 C CNN
+F 3 "https://cdn.macom.com/datasheets/ETC1-1-13.pdf" V 3550 1400 50  0001 C CNN
+	1    3550 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 60244361
+P 3350 1400
+F 0 "#PWR0137" H 3350 1150 50  0001 C CNN
+F 1 "GND" V 3355 1272 50  0000 R CNN
+F 2 "" H 3350 1400 50  0001 C CNN
+F 3 "" H 3350 1400 50  0001 C CNN
+	1    3350 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 60244367
+P 3750 1500
+F 0 "#PWR0138" H 3750 1250 50  0001 C CNN
+F 1 "GND" H 3755 1327 50  0000 C CNN
+F 2 "" H 3750 1500 50  0001 C CNN
+F 3 "" H 3750 1500 50  0001 C CNN
+	1    3750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1300 2700 1300
+Text Label 2900 1500 0    50   ~ 0
+Q+
+Text Label 2900 1300 0    50   ~ 0
+Q-
+Text Label 4750 1300 0    50   ~ 0
+Q_Single_Ended
+$Comp
+L Device:L L2
+U 1 1 60244372
+P 5550 1300
+F 0 "L2" V 5369 1300 50  0000 C CNN
+F 1 "470nH" V 5460 1300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 5550 1300 50  0001 C CNN
+F 3 "~" H 5550 1300 50  0001 C CNN
+	1    5550 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C_Filter4
+U 1 1 60244378
+P 5800 1500
+F 0 "C_Filter4" H 5915 1546 50  0000 L CNN
+F 1 "160pF" H 5915 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5838 1350 50  0001 C CNN
+F 3 "~" H 5800 1500 50  0001 C CNN
+	1    5800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C_Filter3
+U 1 1 6024437E
+P 5250 1500
+F 0 "C_Filter3" H 5365 1546 50  0000 L CNN
+F 1 "160pF" H 5365 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 1350 50  0001 C CNN
+F 3 "~" H 5250 1500 50  0001 C CNN
+	1    5250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1300 4300 1300
+Wire Wire Line
+	5250 1350 5250 1300
+Connection ~ 5250 1300
+Wire Wire Line
+	5250 1300 5400 1300
+Wire Wire Line
+	5800 1350 5800 1300
+Wire Wire Line
+	5800 1300 5700 1300
+$Comp
+L power:GND #PWR0139
+U 1 1 6024438A
+P 5250 1650
+F 0 "#PWR0139" H 5250 1400 50  0001 C CNN
+F 1 "GND" H 5255 1477 50  0000 C CNN
+F 2 "" H 5250 1650 50  0001 C CNN
+F 3 "" H 5250 1650 50  0001 C CNN
+	1    5250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 60244390
+P 5800 1650
+F 0 "#PWR0140" H 5800 1400 50  0001 C CNN
+F 1 "GND" H 5805 1477 50  0000 C CNN
+F 2 "" H 5800 1650 50  0001 C CNN
+F 3 "" H 5800 1650 50  0001 C CNN
+	1    5800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CC_Filter1
+U 1 1 60244396
+P 4450 1300
+F 0 "CC_Filter1" V 4198 1300 50  0000 C CNN
+F 1 ".47uF" V 4289 1300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 1150 50  0001 C CNN
+F 3 "~" H 4450 1300 50  0001 C CNN
+	1    4450 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 1300 5250 1300
+Text Label 6000 1300 0    50   ~ 0
+Q_Filtered
+Text Label 5950 2100 0    50   ~ 0
+I_Filtered
+Wire Wire Line
+	1800 1000 2700 1000
+Wire Wire Line
+	2700 1000 2700 1300
+Wire Wire Line
+	1800 1500 3350 1500
+Wire Wire Line
+	1800 1950 2700 1950
+Wire Wire Line
+	2700 1950 2700 2100
+Wire Wire Line
+	1800 2450 2700 2450
+Wire Wire Line
+	2700 2450 2700 2300
+Wire Wire Line
+	5800 2500 5800 2450
+Text HLabel 1800 1000 0    50   Input ~ 0
+Q-
+Text HLabel 1800 1500 0    50   Input ~ 0
+Q+
+Text HLabel 1800 1950 0    50   Input ~ 0
+I+
+Text HLabel 1800 2450 0    50   Input ~ 0
+I-
+Wire Wire Line
+	5800 1300 6650 1300
+Connection ~ 5800 1300
+Wire Wire Line
+	5800 2100 6650 2100
+Connection ~ 5800 2100
+Text HLabel 6650 2100 2    50   Input ~ 0
+I_Filter
+Text HLabel 6650 1300 2    50   Input ~ 0
+Q_Filter
+$EndSCHEMATC

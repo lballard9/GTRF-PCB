@@ -1,0 +1,177 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RandomSMAIFoundOnline:SMA-J-P-H-ST-EM1 J1
+U 1 1 6022A764
+P 900 1800
+F 0 "J1" H 892 2107 50  0000 C CNN
+F 1 "SMA-J-P-H-ST-EM1" H 892 2016 50  0000 C CNN
+F 2 "SAMTEC_SMA-J-P-H-ST-EM1" H 900 1800 50  0001 L BNN
+F 3 "" H 900 1800 50  0001 L BNN
+F 4 "Samtec" H 900 1800 50  0001 L BNN "MANUFACTURER"
+F 5 "G" H 900 1800 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendations" H 900 1800 50  0001 L BNN "STANDARD"
+F 7 "3.675mm" H 900 1800 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    900  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 6022CB78
+P 1000 1800
+F 0 "#PWR0103" H 1000 1550 50  0001 C CNN
+F 1 "GND" H 1005 1627 50  0000 C CNN
+F 2 "" H 1000 1800 50  0001 C CNN
+F 3 "" H 1000 1800 50  0001 C CNN
+	1    1000 1800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2000 1600 900  200 
+U 602307E3
+F0 "LNA" 50
+F1 "LNA.sch" 50
+F2 "AntennaIn" I L 2000 1700 50 
+F3 "LNA_Out" I R 2900 1700 50 
+$EndSheet
+Wire Wire Line
+	1000 1700 2000 1700
+$Sheet
+S 3450 1600 600  450 
+U 60238608
+F0 "Mixer" 50
+F1 "Mixer.sch" 50
+F2 "LO_In" I L 3450 1950 50 
+F3 "I+" I R 4050 1650 50 
+F4 "I-" I R 4050 1750 50 
+F5 "Q+" I R 4050 1900 50 
+F6 "Q-" I R 4050 2000 50 
+F7 "RF_In" I L 3450 1700 50 
+$EndSheet
+Wire Wire Line
+	2900 1700 3450 1700
+$Comp
+L RandomSMAIFoundOnline:SMA-J-P-H-ST-EM1 J2
+U 1 1 6025FC8A
+P 3250 2400
+F 0 "J2" H 3242 2707 50  0000 C CNN
+F 1 "SMA-J-P-H-ST-EM1" H 3242 2616 50  0000 C CNN
+F 2 "SAMTEC_SMA-J-P-H-ST-EM1" H 3250 2400 50  0001 L BNN
+F 3 "" H 3250 2400 50  0001 L BNN
+F 4 "Samtec" H 3250 2400 50  0001 L BNN "MANUFACTURER"
+F 5 "G" H 3250 2400 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendations" H 3250 2400 50  0001 L BNN "STANDARD"
+F 7 "3.675mm" H 3250 2400 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    3250 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 2300 3150 1950
+Wire Wire Line
+	3150 1950 3450 1950
+$Comp
+L power:GND #PWR0111
+U 1 1 6026335E
+P 3250 2300
+F 0 "#PWR0111" H 3250 2050 50  0001 C CNN
+F 1 "GND" H 3255 2127 50  0000 C CNN
+F 2 "" H 3250 2300 50  0001 C CNN
+F 3 "" H 3250 2300 50  0001 C CNN
+	1    3250 2300
+	0    -1   -1   0   
+$EndComp
+$Sheet
+S 4100 1600 700  500 
+U 60276C11
+F0 "DiffToSingle" 50
+F1 "DiffToSingle.sch" 50
+F2 "Q+" I L 4100 1900 50 
+F3 "Q-" I L 4100 2000 50 
+F4 "I+" I L 4100 1650 50 
+F5 "I-" I L 4100 1750 50 
+F6 "I_Filter" I R 4800 1950 50 
+F7 "Q_Filter" I R 4800 1700 50 
+$EndSheet
+Wire Wire Line
+	4050 2000 4100 2000
+Wire Wire Line
+	4050 1900 4100 1900
+Wire Wire Line
+	4050 1750 4100 1750
+Wire Wire Line
+	4050 1650 4100 1650
+$Sheet
+S 5050 1600 750  450 
+U 6027DD99
+F0 "SummerAndAmp" 50
+F1 "SummerAndAmp.sch" 50
+F2 "Q" I L 5050 1700 50 
+F3 "I" I L 5050 1950 50 
+F4 "SummedOutput" I R 5800 1850 50 
+$EndSheet
+Wire Wire Line
+	4800 1700 5050 1700
+Wire Wire Line
+	4800 1950 5050 1950
+$Sheet
+S 6200 1600 800  450 
+U 60280B68
+F0 "IF_FilterAndAmp" 50
+F1 "IF_FilterAndAmp.sch" 50
+F2 "IF_In" I L 6200 1850 50 
+$EndSheet
+Wire Wire Line
+	5800 1850 6200 1850
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 60328613
+P 3100 800
+F 0 "J3" H 3180 792 50  0000 L CNN
+F 1 "Conn_01x02" H 3180 701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3100 800 50  0001 C CNN
+F 3 "~" H 3100 800 50  0001 C CNN
+	1    3100 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 603297DE
+P 4050 800
+F 0 "J4" H 4130 792 50  0000 L CNN
+F 1 "Conn_01x02" H 4130 701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 800 50  0001 C CNN
+F 3 "~" H 4050 800 50  0001 C CNN
+	1    4050 800 
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 800  0    50   Input ~ 0
++5V
+Text GLabel 2900 900  0    50   Input ~ 0
+-5V
+Text GLabel 3850 800  0    50   Input ~ 0
+3.3V
+$Comp
+L power:GND #PWR0132
+U 1 1 6032A97C
+P 3850 900
+F 0 "#PWR0132" H 3850 650 50  0001 C CNN
+F 1 "GND" H 3855 727 50  0000 C CNN
+F 2 "" H 3850 900 50  0001 C CNN
+F 3 "" H 3850 900 50  0001 C CNN
+	1    3850 900 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
