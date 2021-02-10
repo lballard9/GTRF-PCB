@@ -799,4 +799,6 @@ F 3 "" H 9100 4100 50  0001 L BNN
 	1    9100 4100
 	0    1    1    0   
 $EndComp
+Text Label 1200 4100 0    50   ~ 0
+InputToTLV
 $EndSCHEMATC
