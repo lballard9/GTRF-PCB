@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    <h1>D:\KiCad\GTRF-PCB\Projects\DemodulatorCircuit\DemodulatorCircuit.sch</h1>
+    <p>14/02/2021 17:09:57</p>
+    <p>Eeschema (5.1.9)-1</p>
+    <p><b>Component Count:</b>32</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>C2</td><td>1</td><td>10n</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>C_CMG1</td><td>1</td><td>.22u</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>C_Inv_1, C_Inv_2, C_Inv_3, C_Inv_4, C_Inv_5</td><td>5</td><td>8.2pF</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>CC1</td><td>1</td><td>.1u</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>Cin1</td><td>1</td><td>100p</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>Cout1</td><td>1</td><td>100p</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>IC2</td><td>1</td><td>MC74ACT86DG</td><td>MC74ACT86DG:MC74ACT86DG</td><td>http://www.onsemi.com/pub/Collateral/MC74AC86-D.PDF</td><td>ON SEMICONDUCTOR - MC74ACT86DG - XOR Gate, 74ACT86, 2 Input, 24 mA, 4.5 V to 5.5 V, SOIC-14</td><td></td></tr><tr><td>J1, J3</td><td>2</td><td>SMA-J-P-H-ST-EM1</td><td>RandomSMAIFoundOnline:SMA-J-P-H-ST-EM1</td><td></td><td></td><td></td></tr><tr><td>J2</td><td>1</td><td>Conn_01x02</td><td>Connector_Generic:Conn_01x02</td><td>~</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>Jout1</td><td>1</td><td>Conn_01x02</td><td>Connector_Generic:Conn_01x02</td><td>~</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>R1, R2</td><td>2</td><td>3.3k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R3, R4</td><td>2</td><td>1.2k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R_CMG1</td><td>1</td><td>10</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R_Inv_1, R_Inv_2, R_Inv_3, R_Inv_4, R_Inv_5</td><td>5</td><td>1k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>RFB2</td><td>1</td><td>1k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>RJumper1</td><td>1</td><td>0</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>Rout1</td><td>1</td><td>33k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>U1</td><td>1</td><td>TLV3501AID</td><td>TLV3501AID:TLV3501AID</td><td></td><td></td><td></td></tr><tr><td>U2</td><td>1</td><td>TLV2374ID</td><td>TLV2374ID:TLV2374ID</td><td></td><td></td><td></td></tr><tr><td>U3</td><td>1</td><td>SFECF10M7EA00-R0</td><td>SFECF10M7EA00-R0:SFECF10M7EA00-R0</td><td>https://www.murata.com/en-us/api/pdfdownloadapi?cate=luCeramicFilters&partno=SFECF10M7EA00-R0</td><td>Filter 10.7MHz 330kHz Band SMD</td><td></td></tr><tr><td>U4</td><td>1</td><td>SN74ACT04IDREP</td><td>SN74ACT04IDREP:SN74ACT04IDREP</td><td></td><td></td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

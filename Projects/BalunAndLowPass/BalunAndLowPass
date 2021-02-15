@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    <h1>D:\KiCad\GTRF-PCB\Projects\BalunAndLowPass\BalunAndLowPass.sch</h1>
+    <p>14/02/2021 17:11:34</p>
+    <p>Eeschema (5.1.9)-1</p>
+    <p><b>Component Count:</b>18</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>C1, C2, C3, C4</td><td>4</td><td>160pF</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>CC1, CC2</td><td>2</td><td>.47uF</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>J1, J2, J3, J4, J5, J6</td><td>6</td><td>SMA-J-P-H-ST-EM1</td><td>RandomSMAIFoundOnline:SMA-J-P-H-ST-EM1</td><td></td><td></td><td></td></tr><tr><td>L1, L2, L11, L22</td><td>4</td><td>470nH</td><td>Device:L</td><td>~</td><td>Inductor</td><td></td></tr><tr><td>TR1, TR2</td><td>2</td><td>ETC1-1-13</td><td>Transformer:ETC1-1-13</td><td>https://cdn.macom.com/datasheets/ETC1-1-13.pdf</td><td>4.5-4000MHz 1:1 RF Transformer, Balanced Transmission Line, SM-22</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
