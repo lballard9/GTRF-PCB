@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R RB1A1
+L LNA_1-rescue:R-Device RB1A1
 U 1 1 6006F81B
 P 3300 2300
 F 0 "RB1A1" H 3230 2254 50  0000 R CNN
@@ -25,7 +25,7 @@ F 3 "~" H 3300 2300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C CC2
+L LNA_1-rescue:C-Device CC2
 U 1 1 60075EB6
 P 4000 3350
 F 0 "CC2" H 4115 3396 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "~" H 4000 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C CC1
+L LNA_1-rescue:C-Device CC1
 U 1 1 600770B4
 P 2850 3850
 F 0 "CC1" H 2965 3896 50  0000 L CNN
@@ -47,7 +47,7 @@ F 3 "~" H 2850 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R RFB1
+L LNA_1-rescue:R-Device RFB1
 U 1 1 60078033
 P 4000 2750
 F 0 "RFB1" H 3930 2704 50  0000 R CNN
@@ -58,7 +58,7 @@ F 3 "~" H 4000 2750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:L LFB1
+L LNA_1-rescue:L-Device LFB1
 U 1 1 6007853D
 P 4700 2450
 F 0 "LFB1" V 4519 2450 50  0000 C CNN
@@ -75,7 +75,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 2450 4550 2450
 $Comp
-L Device:R RFB2
+L LNA_1-rescue:R-Device RFB2
 U 1 1 6007A24B
 P 5200 2450
 F 0 "RFB2" V 5407 2450 50  0000 C CNN
@@ -88,7 +88,7 @@ $EndComp
 Wire Wire Line
 	4850 2450 5050 2450
 $Comp
-L AdditionalParts:BFU790F U1
+L LNA_1-rescue:BFU790F-AdditionalParts U1
 U 1 1 6008C937
 P 4600 3900
 F 0 "U1" H 5100 4050 50  0000 C CNN
@@ -105,7 +105,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 2450 5350 2450
 $Comp
-L Device:R RE1
+L LNA_1-rescue:R-Device RE1
 U 1 1 600967BC
 P 4350 4900
 F 0 "RE1" H 4280 4854 50  0000 R CNN
@@ -116,7 +116,7 @@ F 3 "~" H 4350 4900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R RE12
+L LNA_1-rescue:R-Device RE12
 U 1 1 600974A1
 P 4700 4900
 F 0 "RE12" H 4630 4854 50  0000 R CNN
@@ -127,7 +127,7 @@ F 3 "~" H 4700 4900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R RE13
+L LNA_1-rescue:R-Device RE13
 U 1 1 60097625
 P 5050 4900
 F 0 "RE13" H 4980 4854 50  0000 R CNN
@@ -148,7 +148,7 @@ Connection ~ 4700 5050
 Wire Wire Line
 	4700 5050 5050 5050
 $Comp
-L Device:R RE14
+L LNA_1-rescue:R-Device RE14
 U 1 1 60098B6D
 P 5400 4900
 F 0 "RE14" H 5330 4854 50  0000 R CNN
@@ -159,7 +159,7 @@ F 3 "~" H 5400 4900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R RE15
+L LNA_1-rescue:R-Device RE15
 U 1 1 60098B73
 P 5750 4900
 F 0 "RE15" H 5680 4854 50  0000 R CNN
@@ -190,7 +190,7 @@ Connection ~ 3300 3850
 Wire Wire Line
 	3300 3850 4000 3850
 $Comp
-L Device:R RC1
+L LNA_1-rescue:R-Device RC1
 U 1 1 6009E84F
 P 5600 1800
 F 0 "RC1" H 5530 1754 50  0000 R CNN
@@ -204,7 +204,7 @@ Wire Wire Line
 	5600 1950 5600 2450
 Connection ~ 5600 2450
 $Comp
-L Device:C CC3
+L LNA_1-rescue:C-Device CC3
 U 1 1 600A01A8
 P 6100 2450
 F 0 "CC3" H 6215 2496 50  0000 L CNN
@@ -221,7 +221,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 1450 5600 1650
 $Comp
-L power:VCC #PWR0102
+L LNA_1-rescue:VCC-power #PWR0102
 U 1 1 600A14F0
 P 3300 1300
 F 0 "#PWR0102" H 3300 1150 50  0001 C CNN
@@ -236,7 +236,7 @@ Connection ~ 5050 4750
 Wire Wire Line
 	2200 3850 2700 3850
 $Comp
-L power:GND #PWR0103
+L LNA_1-rescue:GND-power #PWR0103
 U 1 1 600B27E1
 P 2200 3950
 F 0 "#PWR0103" H 2200 3700 50  0001 C CNN
@@ -247,7 +247,7 @@ F 3 "" H 2200 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L LNA_1-rescue:GND-power #PWR0104
 U 1 1 600BF42B
 P 10000 2850
 F 0 "#PWR0104" H 10000 2600 50  0001 C CNN
@@ -258,7 +258,7 @@ F 3 "" H 10000 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C CC4
+L LNA_1-rescue:C-Device CC4
 U 1 1 600C2E6D
 P 8400 1450
 F 0 "CC4" H 8515 1496 50  0000 L CNN
@@ -269,7 +269,7 @@ F 3 "~" H 8400 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R RB2
+L LNA_1-rescue:R-Device RB2
 U 1 1 600C3923
 P 6750 1800
 F 0 "RB2" H 6680 1754 50  0000 R CNN
@@ -288,7 +288,7 @@ Wire Wire Line
 	5600 1450 6750 1450
 Connection ~ 6750 1450
 $Comp
-L Device:R Ri2
+L LNA_1-rescue:R-Device Ri2
 U 1 1 600CB60C
 P 7050 2450
 F 0 "Ri2" V 6850 2550 50  0000 R CNN
@@ -306,7 +306,7 @@ Connection ~ 6750 2450
 Wire Wire Line
 	6750 2450 6900 2450
 $Comp
-L Device:R Rsh2
+L LNA_1-rescue:R-Device Rsh2
 U 1 1 600CEABE
 P 7500 2700
 F 0 "Rsh2" H 7400 2750 50  0000 R CNN
@@ -321,7 +321,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 2450 7500 2550
 $Comp
-L Device:C Csh2
+L LNA_1-rescue:C-Device Csh2
 U 1 1 600D073B
 P 7500 3250
 F 0 "Csh2" H 7615 3296 50  0000 L CNN
@@ -342,7 +342,7 @@ Connection ~ 8200 1450
 Wire Wire Line
 	8200 1450 8250 1450
 $Comp
-L power:GND #PWR0105
+L LNA_1-rescue:GND-power #PWR0105
 U 1 1 600CFB84
 P 7500 3550
 F 0 "#PWR0105" H 7500 3300 50  0001 C CNN
@@ -353,7 +353,7 @@ F 3 "" H 7500 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0106
+L LNA_1-rescue:GND-power #PWR0106
 U 1 1 600DD319
 P 8650 1550
 F 0 "#PWR0106" H 8650 1300 50  0001 C CNN
@@ -368,7 +368,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 1450 8650 1550
 $Comp
-L Device:R RE21
+L LNA_1-rescue:R-Device RE21
 U 1 1 600DE571
 P 8100 3250
 F 0 "RE21" H 8030 3204 50  0000 R CNN
@@ -379,7 +379,7 @@ F 3 "~" H 8100 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R RE22
+L LNA_1-rescue:R-Device RE22
 U 1 1 600DF60E
 P 8500 3250
 F 0 "RE22" H 8430 3204 50  0000 R CNN
@@ -397,7 +397,7 @@ Wire Wire Line
 	8500 3100 8200 3100
 Connection ~ 8200 3100
 $Comp
-L Device:R Ro1
+L LNA_1-rescue:R-Device Ro1
 U 1 1 600E443C
 P 9000 2750
 F 0 "Ro1" V 8800 2850 50  0000 R CNN
@@ -408,7 +408,7 @@ F 3 "~" H 9000 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C CC5
+L LNA_1-rescue:C-Device CC5
 U 1 1 600E4BF9
 P 9450 2750
 F 0 "CC5" H 9565 2796 50  0000 L CNN
@@ -458,7 +458,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 5150 5050 5050
 $Comp
-L power:GND #PWR0101
+L LNA_1-rescue:GND-power #PWR0101
 U 1 1 600A0F24
 P 5050 5150
 F 0 "#PWR0101" H 5050 4900 50  0001 C CNN
@@ -469,7 +469,7 @@ F 3 "" H 5050 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0107
+L LNA_1-rescue:GND-power #PWR0107
 U 1 1 600A2687
 P 8300 3500
 F 0 "#PWR0107" H 8300 3250 50  0001 C CNN
@@ -480,7 +480,7 @@ F 3 "" H 8300 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0108
+L LNA_1-rescue:VCC-power #PWR0108
 U 1 1 600FAC3B
 P 2700 1350
 F 0 "#PWR0108" H 2700 1200 50  0001 C CNN
@@ -491,7 +491,7 @@ F 3 "" H 2700 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0109
+L LNA_1-rescue:GND-power #PWR0109
 U 1 1 600FB0E8
 P 2700 1800
 F 0 "#PWR0109" H 2700 1550 50  0001 C CNN
@@ -502,7 +502,7 @@ F 3 "" H 2700 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Barrel_Jack_MountingPin J3
+L LNA_1-rescue:Barrel_Jack_MountingPin-Connector J3
 U 1 1 60111861
 P 1950 1500
 F 0 "J3" H 2007 1817 50  0000 C CNN
@@ -514,7 +514,7 @@ F 3 "~" H 2000 1460 50  0001 C CNN
 $EndComp
 NoConn ~ 2250 1800
 $Comp
-L RandomSMAIFoundOnline:SMA-J-P-H-ST-EM1 J1
+L LNA_1-rescue:SMA-J-P-H-ST-EM1-RandomSMAIFoundOnline J1
 U 1 1 60135EC5
 P 2100 3950
 F 0 "J1" H 2092 4257 50  0000 C CNN
@@ -529,7 +529,7 @@ F 7 "3.675mm" H 2100 3950 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_BEC Q1
+L LNA_1-rescue:Q_NPN_BEC-Device Q1
 U 1 1 60109097
 P 8100 2450
 F 0 "Q1" H 8291 2496 50  0000 L CNN
@@ -544,7 +544,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 1350 2700 1350
 $Comp
-L Device:C CC10
+L LNA_1-rescue:C-Device CC10
 U 1 1 6010E877
 P 2700 1500
 F 0 "CC10" H 2450 1550 50  0000 L CNN
@@ -567,7 +567,7 @@ Wire Wire Line
 	2700 1650 2700 1800
 Connection ~ 2700 1650
 $Comp
-L RandomSMAIFoundOnline:SMA-J-P-H-ST-EM1 J2
+L LNA_1-rescue:SMA-J-P-H-ST-EM1-RandomSMAIFoundOnline J2
 U 1 1 6013753B
 P 10100 2850
 F 0 "J2" H 9940 2936 50  0000 R CNN
