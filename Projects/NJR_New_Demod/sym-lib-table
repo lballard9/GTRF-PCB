@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name NJR_New_Demod-rescue)(type Legacy)(uri ${KIPRJMOD}/NJR_New_Demod-rescue.lib)(options "")(descr ""))
+)
