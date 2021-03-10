@@ -568,7 +568,7 @@ U 1 1 604E071B
 P 8775 4350
 F 0 "J_Audio1" H 8855 4342 50  0000 L CNN
 F 1 "Conn_01x02" H 8855 4251 50  0000 L CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 8775 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8775 4350 50  0001 C CNN
 F 3 "~" H 8775 4350 50  0001 C CNN
 	1    8775 4350
 	1    0    0    -1  
@@ -590,7 +590,7 @@ U 1 1 604E6496
 P 8750 4750
 F 0 "J_RSSI1" H 8830 4742 50  0000 L CNN
 F 1 "Conn_01x02" H 8830 4651 50  0000 L CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 8750 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8750 4750 50  0001 C CNN
 F 3 "~" H 8750 4750 50  0001 C CNN
 	1    8750 4750
 	1    0    0    -1  
@@ -612,7 +612,7 @@ U 1 1 604E7CA0
 P 8750 5200
 F 0 "J_Power1" H 8830 5192 50  0000 L CNN
 F 1 "Conn_01x02" H 8830 5101 50  0000 L CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 8750 5200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8750 5200 50  0001 C CNN
 F 3 "~" H 8750 5200 50  0001 C CNN
 	1    8750 5200
 	1    0    0    -1  
