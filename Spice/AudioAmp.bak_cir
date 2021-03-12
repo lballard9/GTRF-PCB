@@ -7,8 +7,8 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.4
 Key ID=Demo
-NLCnt=77
-TXCnt=15
+NLCnt=107
+TXCnt=18
 
 [shapedef]
 Name=Capacitor
@@ -122,7 +122,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=1225
+Used=1235
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -132,8 +132,8 @@ Pin="PinA",0,0,-3,-7
 Name=Resistor
 Definition=Resistor
 Shape=Resistor
-Mask=7425
-Used=827
+Mask=6913
+Used=842
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -144,8 +144,8 @@ Pin="Minus",0,0,-14,-4
 Name=LMV116
 Definition=Subckt
 Shape=Opamp5
-Mask=4097
-Used=2
+Mask=5121
+Used=5
 Label Offset=51,34,-8,44
 PinCnt=5
 Pin="In+",a,0,0,-3,-4
@@ -159,7 +159,7 @@ Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
 Mask=6913
-Used=756
+Used=758
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -192,7 +192,7 @@ PowerFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=0,1, -1,-1, -8,-31, -7,0,792,613
+Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 795,0,1900,609
 Window Placement in AC Analysis=2,3, -1,-1, -8,-31, 52,52,1781,483
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
@@ -350,10 +350,10 @@ Pxs=768,336,872,336
 Pxs=872,200,872,336
 
 [Wire]
-Pxs=792,200,872,200
+Pxs=792,200,840,200
 
 [Wire]
-Pxs=872,200,912,200
+Pxs=872,200,880,200
 
 [Wire]
 Pxs=160,224,160,280
@@ -654,7 +654,7 @@ Pxs=752,264,752,272
 
 [Comp]
 Name=LMV116
-Px=976,152
+Px=960,152
 
 [Attr]
 ON=51,34,PART
@@ -669,18 +669,46 @@ V=LMV116
 ON=0,0,PACKAGE
 V
 
+[Wire]
+Pxs=936,200,936,248
+
+[Wire]
+Pxs=936,248,968,248
+
+[Wire]
+Pxs=936,200,960,200
+
+[Wire]
+Pxs=1056,176,1056,248
+
+[Wire]
+Pxs=1032,176,1056,176
+
+[Wire]
+Pxs=992,208,992,232
+
+[Wire]
+Pxs=992,120,992,128
+
+[Wire]
+Pxs=992,128,992,144
+
+[Comp]
+Name=Ground
+Px=960,152
+Rot=6
+
 [Comp]
 Name=Resistor
-Px=912,200
-Rot=4
+Px=880,200
 
 [Attr]
-ON=18,-20,PART
+ON=18,6,PART
 V=R91
 Style=8192
 
 [Attr]
-ON=18,-34,RESISTANCE
+ON=18,20,RESISTANCE
 V=1k
 Style=8192
 
@@ -689,33 +717,20 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=960,200,976,200
-
-[Wire]
-Pxs=960,200,960,280
-
-[Wire]
-Pxs=960,280,1000,280
-
-[Wire]
-Pxs=1048,176,1080,176
-
-[Wire]
-Pxs=1080,176,1080,280
+Pxs=928,200,936,200
 
 [Comp]
 Name=Resistor
-Px=1000,280
-Rot=4
+Px=968,248
 
 [Attr]
-ON=18,-20,PART
+ON=18,6,PART
 V=R92
 Style=8192
 
 [Attr]
-ON=18,-34,RESISTANCE
-V=2.4k
+ON=18,20,RESISTANCE
+V=10k
 Style=8192
 
 [Attr]
@@ -723,33 +738,27 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=1048,280,1080,280
+Pxs=1016,248,1056,248
 
 [Wire]
-Pxs=1080,176,1144,176
+Pxs=1056,176,1144,176
 
 [Wire]
-Pxs=1008,120,1008,128
-
-[Wire]
-Pxs=1008,128,1008,144
-
-[Wire]
-Pxs=1008,208,1008,232
+Pxs=1144,176,1144,192
 
 [Comp]
 Name=Resistor
-Px=1144,224
-Rot=5
+Px=1144,192
+Rot=1
 
 [Attr]
-ON=8,-25,PART
+ON=8,11,PART
 V=R93
 Style=8192
 
 [Attr]
-ON=8,-39,RESISTANCE
-V=50
+ON=12,28,RESISTANCE
+V=330
 Style=8192
 
 [Attr]
@@ -758,8 +767,188 @@ V
 
 [Comp]
 Name=Ground
-Px=1144,224
+Px=1144,240
 Rot=7
+
+[Comp]
+Name=Capacitor
+Px=840,248
+Rot=3
+
+[Attr]
+ON=-37,-26,PART
+V=C30
+Style=8192
+
+[Attr]
+ON=-40,-40,CAPACITANCE
+V=.01u
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=840,200,872,200
+
+[Comp]
+Name=Ground
+Px=840,248
+Rot=7
+
+[Comp]
+Name=Resistor
+Px=1288,128
+Rot=2
+
+[Attr]
+ON=-42,-20,PART
+V=R94
+Style=8192
+
+[Attr]
+ON=-33,-34,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Resistor
+Px=1288,176
+Rot=2
+
+[Attr]
+ON=-42,-20,PART
+V=R95
+Style=8192
+
+[Attr]
+ON=-33,-34,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Resistor
+Px=1376,72
+Rot=2
+
+[Attr]
+ON=-42,-20,PART
+V=R96
+Style=8192
+
+[Attr]
+ON=-33,-34,RESISTANCE
+V=1.2k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Resistor
+Px=1304,224
+Rot=3
+
+[Attr]
+ON=-32,-25,PART
+V=R97
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=LMV116
+Px=1320,176
+Rot=4
+
+[Attr]
+ON=51,-48,PART
+V=X4
+Style=8192
+
+[Attr]
+ON=51,-62,NAME
+V=LMV116
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1176,128,1192,128
+
+[Wire]
+Pxs=1288,128,1320,128
+
+[Wire]
+Pxs=1288,176,1304,176
+
+[Wire]
+Pxs=1144,176,1240,176
+
+[Wire]
+Pxs=1304,176,1320,176
+
+[Comp]
+Name=Ground
+Px=1304,224
+Rot=7
+
+[Wire]
+Pxs=1288,72,1288,128
+
+[Wire]
+Pxs=1288,72,1328,72
+
+[Wire]
+Pxs=1376,72,1456,72
+
+[Wire]
+Pxs=1456,72,1456,152
+
+[Wire]
+Pxs=1392,152,1456,152
+
+[Wire]
+Pxs=1352,104,1352,112
+
+[Wire]
+Pxs=1352,184,1352,208
+
+[Wire]
+Pxs=1352,216,1360,216
+
+[Wire]
+Pxs=1192,128,1240,128
+
+[Wire]
+Pxs=1352,112,1352,120
+
+[Wire]
+Pxs=1352,208,1352,216
+
+[Wire]
+Pxs=1456,152,1512,152
+
+[Wire]
+Pxs=1512,152,1568,152
 
 [Grid Text]
 Text=".define AmpIn sqrt(50*10^(Pin/10)/1000)"
@@ -770,7 +959,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-Text=".define fc 10.7e6"
+Text=".define fc 20e6"
 Px=240,160
 GridSnap=True
 JustifyH=Left
@@ -780,14 +969,6 @@ CBorder=None
 [Grid Text]
 Text=".define Pin 10"
 Px=256,184
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="Vout"
-Px=872,200
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -866,8 +1047,32 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
+Text="VEE"
+Px=992,232
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
 Text="VCC"
-Px=1008,128
+Px=992,128
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Vout"
+Px=1512,152
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VCC"
+Px=1192,128
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -875,7 +1080,15 @@ CBorder=None
 
 [Grid Text]
 Text="VEE"
-Px=1008,232
+Px=1352,112
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VCC"
+Px=1352,208
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1077,9 +1290,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=326,0
+SB 3=60,0
 Scale 3=1
-Px=1144,224
+Px=326,177
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1207,7 +1420,7 @@ SimulationLog=True
 
 [Transient]
 WinID=1
-Window Placement=0,1, -1,-1, -8,-31, 795,0,1900,609
+Window Placement=2,3, -1,-1, -8,-31, 795,0,1900,609
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -1898,7 +2111,7 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TMax=100u
+TMax=10u
 TStart=9u
 TStep=0
 NPts=51
@@ -1916,10 +2129,10 @@ Plt=1
 AliasID=1
 XExp=T
 YExp=v(vPos)-v(vrel)
-XRng=0.0001,9e-6
+XRng=1e-5,9e-6
 YRng=autoalways
 Options=LINEARX,LINEARY
-Range Grid X=1.82e-5
+Range Grid X=2e-7
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -1941,10 +2154,10 @@ Plt=2
 AliasID=2
 XExp=T
 YExp=v(Vout)
-XRng=0.0001,9e-6
-YRng=2,-4
+XRng=1e-5,9e-6
+YRng=6,-4
 Options=LINEARX,LINEARY
-Range Grid X=1.82e-5
+Range Grid X=2e-7
 Range Grid Y=1
 Enable=Enable
 Line Color=#FF0000
@@ -1967,10 +2180,9 @@ Plt=2
 AliasID=3
 XExp=T
 YExp=V(vin)
-XRng=10,9.9
+XRng=Auto
 YRng=0.6,-0.4
 Options=LINEARX,LINEARY
-Range Grid X=0.02
 Range Grid Y=0.2
 Enable=DontRun
 Line Color=#008000
