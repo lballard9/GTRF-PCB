@@ -7,8 +7,8 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.4
 Key ID=Demo
-NLCnt=99
-TXCnt=18
+NLCnt=126
+TXCnt=21
 
 [shapedef]
 Name=Ground
@@ -82,8 +82,8 @@ Current=32,16,16,16
 Name=Voltage Source
 Definition=VSpice
 Shape=SPICE_V
-Mask=4865
-Used=148
+Mask=5889
+Used=150
 memo=Voltage Source
 Label Offset=19,13,15,13
 PinCnt=2
@@ -94,8 +94,8 @@ Pin="Minus",0,0,-20,-6
 Name=Ground
 Definition=Ground
 Shape=Ground
-Mask=1793
-Used=1245
+Mask=769
+Used=1247
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -120,7 +120,7 @@ Name=Resistor
 Definition=Resistor
 Shape=Resistor
 Mask=6401
-Used=855
+Used=857
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -128,19 +128,19 @@ Pin="Plus",6,0,-10,-4
 Pin="Minus",0,0,-14,-4
 
 [compdef]
-Name=LM324
-Definition=Opamp
+Name=RC4558_TI
+Definition=Subckt
 Shape=Opamp5
 Mask=5248
-Used=2
-memo=Quad General Purpose Opamp
-Label Offset=51,32,-15,46
+Used=5
+memo=Dual General Purpose Opamp
+Label Offset=51,34,-8,44
 PinCnt=5
-Pin="Plus input",0,0,-30,-3
-Pin="Minus input",0,6,-36,17
-Pin="VEE",4,7,6,5
-Pin="Output",9,3,-13,-4
-Pin="VCC",4,-1,6,4
+Pin="1",a,0,0,-3,-4
+Pin="2",a,0,6,-3,18
+Pin="3",a,4,-1,6,15
+Pin="4",a,4,7,6,0
+Pin="5",a,9,3,-3,-3
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 26,26,1414,446
@@ -253,7 +253,7 @@ Pxs=552,40,608,40
 Pxs=736,40,736,64
 
 [Wire]
-Pxs=736,40,792,40
+Pxs=736,40,784,40
 
 [Comp]
 Name=LMV116
@@ -283,7 +283,7 @@ Pxs=808,376,840,376
 Pxs=768,408,768,432
 
 [Wire]
-Pxs=768,320,768,344
+Pxs=768,320,768,328
 
 [Comp]
 Name=Ground
@@ -422,7 +422,7 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=952,328,1016,328
+Pxs=952,328,968,328
 
 [Wire]
 Pxs=1064,328,1096,328
@@ -454,16 +454,16 @@ Pxs=1232,272,1232,352
 Pxs=1168,352,1232,352
 
 [Wire]
-Pxs=1128,304,1128,320
+Pxs=1128,304,1128,312
 
 [Wire]
-Pxs=1128,384,1128,416
+Pxs=1128,384,1128,408
 
 [Wire]
 Pxs=1128,416,1136,416
 
 [Wire]
-Pxs=1232,352,1344,352
+Pxs=1232,352,1304,352
 
 [Comp]
 Name=Voltage Source
@@ -537,7 +537,7 @@ Rot=7
 Pxs=464,400,464,456
 
 [Wire]
-Pxs=840,376,1016,376
+Pxs=840,376,928,376
 
 [Wire]
 Pxs=680,320,680,352
@@ -672,19 +672,15 @@ Pxs=360,16,360,40
 Page=1
 
 [Wire]
-Pxs=360,16,408,16
+Pxs=360,16,416,16
 Page=1
 
 [Wire]
-Pxs=408,16,416,16
+Pxs=88,376,272,376
 Page=1
 
 [Wire]
-Pxs=88,376,360,376
-Page=1
-
-[Wire]
-Pxs=432,352,448,352
+Pxs=432,352,456,352
 Page=1
 
 [Wire]
@@ -692,11 +688,7 @@ Pxs=392,384,392,408
 Page=1
 
 [Wire]
-Pxs=392,296,392,304
-Page=1
-
-[Wire]
-Pxs=392,304,392,320
+Pxs=392,296,392,320
 Page=1
 
 [Comp]
@@ -737,7 +729,7 @@ Style=8192
 
 [Attr]
 ON=18,20,RESISTANCE
-V=3.3k
+V=1.9k
 Style=8192
 
 [Attr]
@@ -746,7 +738,6 @@ V
 
 [Comp]
 Name=Resistor
-Enable=FALSE
 Px=688,304
 Rot=2
 Page=1
@@ -767,7 +758,6 @@ V
 
 [Comp]
 Name=Resistor
-Enable=FALSE
 Px=688,352
 Rot=2
 Page=1
@@ -788,7 +778,6 @@ V
 
 [Comp]
 Name=Resistor
-Enable=FALSE
 Px=776,248
 Rot=2
 Page=1
@@ -800,7 +789,7 @@ Style=8192
 
 [Attr]
 ON=-33,-34,RESISTANCE
-V=1k
+V=1.47k
 Style=8192
 
 [Attr]
@@ -809,7 +798,6 @@ V
 
 [Comp]
 Name=Resistor
-Enable=FALSE
 Px=704,400
 Rot=3
 Page=1
@@ -829,28 +817,19 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=576,304,640,304
-Page=1
-Enable=FALSE
-
-[Wire]
 Pxs=688,304,720,304
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=688,352,704,352
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=704,352,720,352
 Page=1
-Enable=FALSE
 
 [Comp]
 Name=Ground
-Enable=FALSE
 Px=704,400
 Rot=7
 Page=1
@@ -858,47 +837,38 @@ Page=1
 [Wire]
 Pxs=688,248,688,304
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=688,248,728,248
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=776,248,856,248
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=856,248,856,328
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=792,328,856,328
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=752,280,752,296
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=752,360,752,392
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=752,392,760,392
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=856,328,968,328
 Page=1
-Enable=FALSE
 
 [Comp]
 Name=Voltage Source
@@ -975,9 +945,8 @@ Pxs=88,376,88,432
 Page=1
 
 [Wire]
-Pxs=464,352,640,352
+Pxs=456,352,640,352
 Page=1
-Enable=FALSE
 
 [Wire]
 Pxs=304,296,304,328
@@ -1000,16 +969,15 @@ Pxs=336,328,360,328
 Page=1
 
 [Wire]
-Pxs=424,248,464,248
+Pxs=424,248,456,248
 Page=1
 
 [Wire]
-Pxs=464,248,464,352
+Pxs=456,248,456,352
 Page=1
 
 [Comp]
 Name=Resistor
-Enable=FALSE
 Px=968,328
 Rot=1
 Page=1
@@ -1030,69 +998,236 @@ V
 
 [Comp]
 Name=Ground
-Enable=FALSE
 Px=968,376
 Rot=7
 Page=1
 
-[Comp]
-Name=LM324
-Px=360,376
-Rot=4
+[Wire]
+Pxs=456,248,464,248
 Page=1
 
-[Attr]
-ON=51,-46,PART
-V=X7
-Style=8192
-
-[Attr]
-ON=51,-60,MODEL
-V=LM324
-
-[Attr]
-ON=51,-88,PACKAGE
-V=DIP14
-
-[Attr]
-ON=51,-102,GATE
-V=A
-
-[Attr]
-ON=51,-116,COMPNAME
-V=UX7
-
 [Comp]
-Name=LM324
-Enable=FALSE
+Name=RC4558_TI
 Px=720,352
 Rot=4
 Page=1
 
 [Attr]
-ON=51,-46,PART
-V=X8
+ON=51,-48,PART
+V=X12
 Style=8192
 
 [Attr]
-ON=51,-60,MODEL
-V=LM324
+ON=51,-62,NAME
+V=RC4558_TI
 
 [Attr]
-ON=51,-88,PACKAGE
-V=DIP14
+ON=51,-90,PACKAGE
+V=DIP8
 
 [Attr]
-ON=51,-102,GATE
+ON=51,-104,GATE
 V=A
 
 [Attr]
-ON=51,-116,COMPNAME
-V=UX7
+ON=51,-118,COMPNAME
+V=UX11
+
+[Comp]
+Name=RC4558_TI
+Px=360,376
+Rot=4
+Page=1
+
+[Attr]
+ON=51,-48,PART
+V=X13
+Style=8192
+
+[Attr]
+ON=51,-62,NAME
+V=RC4558_TI
+
+[Attr]
+ON=51,-90,PACKAGE
+V=DIP8
+
+[Attr]
+ON=51,-104,GATE
+V=A
+
+[Attr]
+ON=51,-118,COMPNAME
+V=UX11
 
 [Wire]
-Pxs=448,352,464,352
+Pxs=272,208,544,208
 Page=1
+
+[Wire]
+Pxs=616,184,640,184
+Page=1
+
+[Wire]
+Pxs=576,216,576,240
+Page=1
+
+[Wire]
+Pxs=576,128,576,152
+Page=1
+
+[Comp]
+Name=Ground
+Px=488,80
+Rot=3
+Page=1
+
+[Comp]
+Name=Resistor
+Px=488,80
+Rot=1
+Page=1
+
+[Attr]
+ON=8,11,PART
+V=R106
+Style=8192
+
+[Attr]
+ON=8,25,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Resistor
+Px=560,80
+Page=1
+
+[Attr]
+ON=18,6,PART
+V=R107
+Style=8192
+
+[Attr]
+ON=18,20,RESISTANCE
+V=12k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=640,184,664,184
+Page=1
+
+[Wire]
+Pxs=488,128,488,160
+Page=1
+
+[Wire]
+Pxs=488,160,520,160
+Page=1
+
+[Wire]
+Pxs=520,80,520,160
+Page=1
+
+[Wire]
+Pxs=520,80,560,80
+Page=1
+
+[Wire]
+Pxs=520,160,544,160
+Page=1
+
+[Wire]
+Pxs=608,80,640,80
+Page=1
+
+[Wire]
+Pxs=640,80,640,184
+Page=1
+
+[Wire]
+Pxs=640,80,648,80
+Page=1
+
+[Comp]
+Name=RC4558_TI
+Px=544,208
+Rot=4
+Page=1
+
+[Attr]
+ON=51,-48,PART
+V=X14
+Style=8192
+
+[Attr]
+ON=51,-62,NAME
+V=RC4558_TI
+
+[Attr]
+ON=51,-90,PACKAGE
+V=DIP8
+
+[Attr]
+ON=51,-104,GATE
+V=A
+
+[Attr]
+ON=51,-118,COMPNAME
+V=UX11
+
+[Wire]
+Pxs=272,208,272,376
+Page=1
+
+[Wire]
+Pxs=272,376,360,376
+Page=1
+
+[Wire]
+Pxs=664,184,664,248
+Page=1
+
+[Wire]
+Pxs=608,248,664,248
+Page=1
+
+[Wire]
+Pxs=608,248,608,304
+Page=1
+
+[Wire]
+Pxs=608,304,640,304
+Page=1
+
+[Wire]
+Pxs=784,40,792,40
+
+[Wire]
+Pxs=768,328,768,344
+
+[Wire]
+Pxs=1304,352,1344,352
+
+[Wire]
+Pxs=968,328,1016,328
+
+[Wire]
+Pxs=1128,312,1128,320
+
+[Wire]
+Pxs=1128,408,1128,416
+
+[Wire]
+Pxs=928,376,1016,376
 
 [Grid Text]
 Text=".define Vin 1.2"
@@ -1213,21 +1348,11 @@ CBorder=None
 
 [Grid Text]
 Text="Vout"
-Px=448,352
+Px=880,328
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
 Page=1
-CBorder=None
-
-[Grid Text]
-Text="VCC1"
-Px=592,304
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-Page=1
-Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -1237,7 +1362,6 @@ GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
 Page=1
-Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -1247,7 +1371,41 @@ GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
 Page=1
-Enable=FALSE
+CBorder=None
+
+[Grid Text]
+Text="VPlus"
+Px=544,352
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Page=1
+CBorder=None
+
+[Grid Text]
+Text="VPLUS"
+Px=928,376
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VCC1"
+Px=576,240
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Page=1
+CBorder=None
+
+[Grid Text]
+Text="VEE1"
+Px=576,136
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Page=1
 CBorder=None
 
 [Schematic]
@@ -1430,7 +1588,7 @@ Enable=True
 CurrentPage 0=0
 CurrentPage 1=0
 CurrentPage 2=0
-CurrentPage 3=1
+CurrentPage 3=0
 TabSize 0=425
 TabSize 1=425
 TabSize 2=425
@@ -1440,15 +1598,15 @@ TabSize 3=425
 Index=0
 Section=0
 Print=True
-Enable=False
+Enable=True
 Name=LMV116
 PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=0,192
+SB 3=411,131
 Scale 3=1
-Px=202,683
+Px=1041,479
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1494,15 +1652,15 @@ Block Select Color=#51F998
 Index=1
 Section=0
 Print=True
-Enable=True
+Enable=False
 Name=CheaperOpAmp
 PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=225,111
+SB 3=169,41
 Scale 3=1
-Px=404,276
+Px=400,271
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1588,6 +1746,59 @@ Disabled	Color=#C0C0C0
 KeyWord Color=#0000FF
 Error	Color=#FF0000
 Search Color=#FFFF00
+
+[Page]
+Index=5
+Section=0
+Print=True
+Enable=True
+Name=Page 1
+PrinterScale=1
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Px=0,0
+WinBackGround Color=#FFFFFF
+Select Color=#FF0000
+Anchor Color=#000000
+Select Box Color=#000080
+Grid Text Color=Height=-12,FStyle=0,Color=#0000FF,Name=Verdana
+Grid Text RTF=False
+Grid Text Angle=0
+Grid Text GridSnap=True
+Grid Text PinIt=False
+Grid Text JustifyH=Left
+Grid Text JustifyV=Bottom
+Grid GradientColor2=None
+Grid OutlineThickness=1
+Grid OutlineColor=None
+Component Color=#0000FF
+Attribute Text=Height=-12,FStyle=0,Color=#008000,Name=Verdana
+Wire Color=#008000
+Bus Color=#008000
+Pin Connection=Height=-10,FStyle=0,Color=#FF0000,Name=Arial
+Pin Marker Color=#008000
+Node Number=Height=-11,FStyle=0,Color=#FF00FF,Name=Arial
+Node Voltage Color=Height=-11,FStyle=0,Color=#000000,Name=Arial
+Dynamic AC Voltage Color=#E4E4E4
+Text Banner Text=Height=-15,FStyle=0,Color=#800000,Name=Arial
+Title Block Background=#C0C0C0
+Current=Height=-11,FStyle=0,Color=#0000FF,Name=Arial
+Power/Condition=Height=-11,FStyle=0,Color=#FF0000,Name=Arial
+Digital Path Color=#FF0000
+Title Block Border=#000000
+Disabled	Color=#C0C0C0
+Search Color=#FFFF00
+Grid Color=#000000
+Graph Paper=#E4E4E4
+Digital 0 Color=#000000
+Digital R Color=#FFFF00
+Digital F Color=#FFFF00
+Digital 1 Color=#FF0000
+Digital X Color=#C0C0C0
+Digital Z Color=#808080
+Block Select Color=#51F998
 
 [Text Area]
 Section=0
@@ -2743,10 +2954,10 @@ AliasID=1
 XExp=DCINPUT1
 YExp=v(vout)
 XRng=1.14,0.28
-YRng=3.5,1
+YRng=7.5,-5
 Options=LINEARX,LINEARY
 Range Grid X=0.172
-Range Grid Y=0.5
+Range Grid Y=2.5
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -2764,8 +2975,15 @@ NOFmtY=3E
 
 [WaveForm]
 Analysis=DC
-AliasID=-1
+Plt=1
+AliasID=2
+XExp=DCINPUT1
+YExp=v(vplus)
+XRng=1.14,0.28
+YRng=7.5,-5
 Options=LINEARX,LINEARY
+Range Grid X=0.172
+Range Grid Y=2.5
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
