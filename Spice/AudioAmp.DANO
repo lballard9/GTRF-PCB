@@ -1,0 +1,1043 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.4 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                          Dynamic AC of AudioAmp                          ***
+***                          3/11/2021 11:02:00 PM                           ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+AC Voltages at Frequency=1.07e+007 (Mag)
+========================================
+Node                      Voltage  Node                      Voltage 
+1                               0  2                               0 
+VPOS                     159.513m  4                          7.864m 
+VIN                             1  VOUT                       7.864m 
+VREL                     159.513m  VD1                      998.068m 
+X2.XI_NN.1                 7.864m  X2.XVCM_CLAMP.IOUT+    1.399E-029 
+X2.XE_N.2                159.513m  X2.XGR_AMP.VC+         1.399E-029 
+X2.XGR_AMP.VC-         1.399E-029  X2.XCL_AMP.VC+         1.399E-029 
+X2.XCL_AMP.VC-         1.399E-029  X2.31                       6.72m 
+X2.VCLP                     6.72m  X2.52                       6.72m 
+X2.30                       6.72m  X2.29                       6.72m 
+X2.51                       6.72m  X2.28                       6.72m 
+X2.42                      7.864m  X2.XVCM_CLAMP.VP-         40.679f 
+X2.XCLAWN.IOUT+           40.679f  X2.XVCM_CLAMP.VP+         39.738f 
+X2.XCLAWP.IOUT-           39.738f  X2.83                    159.513m 
+X2.21                     23.719m  X2.22                      5.487m 
+X2.XE_N.1                159.513m  X2.XOL_SENSE.OLP           6.246f 
+X2.25                      6.246f  X2.XOL_SENSE.OLN           6.246f 
+X2.27                      6.246f  X2.XVCCS_LIM_ZO.IOUT-     86.404m 
+X2.XVCCS_LIM_ZO.VC+       21.602u  X2.34                    497.355u 
+X2.XGR_SRC.IOUT+         508.615u  X2.XVCCS_LIM_1.IOUT-        15.32 
+X2.XVCCS_LIM_1.VC+        160.88m  X2.XVCCS_LIM_1.VC-         7.864m 
+X2.38                      86.35m  X2.40                      86.34m 
+X2.39                      86.36m  X2.41                    106.051m 
+X2.43                      4.444f  X2.44                     19.188f 
+X2.45                      1.465f  X2.46                      5.671f 
+X2.XCLAWN.VC-              7.653u  X2.XCL_AMP.VO+         7.653E-022 
+X2.XCL_AMP.VO-             7.653u  X2.XGR_AMP.VIN           508.615u 
+X2.XGR_AMP.VO+         5.086E-020  X2.XGR_AMP.VO-             5.086m 
+X2.VSENSE                508.615u  X2.XGR_SRC.VC+         5.086E-020 
+X2.XGR_SRC.VC-             5.086m  X2.XCL_SRC.VC+         7.653E-022 
+X2.XCL_SRC.VC-             7.653u  X2.XCL_SRC.IOUT+           8.098m 
+X2.XCLAWP.IOUT+          591.082n  X2.XCLAWN.IOUT-          605.072n 
+X2.64                    591.082n  X2.65                    605.072n 
+X2.XCLAW_AMP.VC+         591.082n  X2.XCLAW_AMP.VC-         605.072n 
+X2.XCLAW_AMP.VIN           1.157m  X2.XCLAW_AMP.VO+       1.157E-019 
+X2.XCLAW_AMP.VO-       1.157E-019  X2.XCLAW_SRC.VC+       1.157E-019 
+X2.XCLAW_SRC.VC-       1.157E-019  X2.XCLAW_SRC.IOUT+       497.355u 
+X2.SW_OL               1.399E-029  X2.XOL_SENSE.SW+       1.399E-029 
+X2.71                     52.018u  X2.72                      7.864m 
+X2.73                      8.098m  X2.XVCM_CLAMP.IOUT-       160.88m 
+X2.XVCM_CLAMP.VIN+        160.88m  X2.79                     40.679f 
+X2.78                  1.399E-029  X2.80                     39.738f 
+X2.81                     160.88m  X2.82                     160.88m 
+X2.XI_NN.7                      0  X2.XI_NN.8                      0 
+X2.XI_NN.3                      0  X2.XI_NN.6                      0 
+X2.XI_NN.4                      0  X2.XI_NN.5                      0 
+X2.XI_NP.7                      0  X2.XI_NP.8                      0 
+X2.XI_NP.3                      0  X2.XI_NP.6                      0 
+X2.XI_NP.4                      0  X2.XI_NP.5                      0 
+X2.XE_N.7                       0  X2.XE_N.8                       0 
+X2.XE_N.3                       0  X2.XE_N.6                       0 
+X2.XE_N.4                       0  X2.XE_N.5                       0 
+X2.XCLAWP.G1_NFV           7.653u  X2.XCLAWN.G1_NFV           7.653u 
+
+
+AC values for Diode (Mag)
+=========================
+Instance:                       D1                    D3                    D2
+Using model:                1N5711                1N5711                1N5711
+
+Power AC Terms:
+PD                          6.432u              203.503n                3.353n
+PS                         43.975u                 1.39u                 1.16u
+
+AC Pin Currents:
+Id                         99.082u               17.618u               14.544u
+
+Device Variables:
+area                        1.000                 1.000                 1.000 
+ic                          0.000                 0.000                 0.000 
+
+
+Instance:                       D4           X2.XI_NN.D1           X2.XI_NN.D2
+Using model:                1N5711         X2.XI_NN.DVNF         X2.XI_NN.DVNF
+
+Power AC Terms:
+PD                         106.07n                     0                     0
+PS                         36.689u                     0                     0
+
+AC Pin Currents:
+Id                         81.796u                     0                     0
+
+Device Variables:
+area                        1.000                 1.000                 1.000 
+ic                          0.000                 0.000                 0.000 
+
+
+Instance:              X2.XI_NP.D1           X2.XI_NP.D2            X2.XE_N.D1
+Using model:         X2.XI_NP.DVNF         X2.XI_NP.DVNF           X2.XE_N.DVN
+
+Power AC Terms:
+PD                               0                     0                     0
+PS                               0                     0                     0
+
+AC Pin Currents:
+Id                               0                     0                     0
+
+Device Variables:
+area                        1.000                 1.000                 1.000 
+ic                          0.000                 0.000                 0.000 
+
+
+Instance:               X2.XE_N.D2
+Using model:           X2.XE_N.DVN
+
+Power AC Terms:
+PD                               0
+PS                               0
+
+AC Pin Currents:
+Id                               0
+
+Device Variables:
+area                        1.000 
+ic                          0.000 
+
+
+
+AC values for Resistor (Mag)
+============================
+Instance:                        R1                    R3                    R4
+
+Power AC Terms:
+PD                          11.536u              618.418n               813.83n
+
+AC Pin Currents:
+Ir                         151.892u              157.279u              180.425u
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                   X2.RSRC                X2.R48                X2.R49
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                         281.307u                 2.66p              338.547p
+
+AC Pin Currents:
+Ir                          23.719m              230.659p              123.407n
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R77                X2.R76                X2.R75
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       8.816E-036            8.816E-036               22.581u
+
+AC Pin Currents:
+Ir                       4.199E-019            4.199E-019                 6.72m
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R74                X2.R73                X2.R69
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                          22.581u                3.733m              123.681f
+
+AC Pin Currents:
+Ir                            6.72m               86.404m              497.355p
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R68                X2.R44                X2.R72
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                         129.345f              117.347u               93.329p
+
+AC Pin Currents:
+Ir                         508.615p                15.32u                8.641u
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R71                X2.R70                X2.R67
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                         372.632n                3.728m              170.685p
+
+AC Pin Currents:
+Ir                           8.633u                86.35m              184.762n
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R66                X2.R65             X2.RDUMMY
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                           5.518n                5.623m                15.46n
+
+AC Pin Currents:
+Ir                         184.762n              106.051m                3.932u
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                     X2.RX                X2.R61                X2.R58
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                         154.215n            2.219E-033            1.742E-036
+
+AC Pin Currents:
+Ir                           3.927u                0.001f            1.867E-022
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R57                X2.R56                X2.R55
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       1.841E-028            1.074E-034            1.500E-037
+
+AC Pin Currents:
+Ir                          19.188f            1.465E-019            5.478E-023
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R54                X2.R39                X2.R37
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       1.608E-029                     0                     0
+
+AC Pin Currents:
+Ir                           5.671f                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R42                X2.R38                X2.R36
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       5.846E-025            1.293E-039               12.934u
+
+AC Pin Currents:
+Ir                          34.194p            5.086E-020                5.086m
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R40                X2.R41                X2.R21
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       5.846E-057            5.846E-023            2.928E-043
+
+AC Pin Currents:
+Ir                       3.419E-027              341.943p            7.653E-022
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R20                X2.R29                X2.R30
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                          29.285p            1.324E-060            1.324E-028
+
+AC Pin Currents:
+Ir                           7.653u            5.145E-029              514.518f
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R22                X2.R19                X2.R12
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                                0                     0                0.175f
+
+AC Pin Currents:
+Ir                                0                     0              591.082p
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R16                X2.R13                X2.R17
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       7.896E-031                0.183f            8.274E-031
+
+AC Pin Currents:
+Ir                          39.739f              605.072p               40.679f
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R15                X2.R14                X2.R26
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                           0.175f                0.183f            1.747E-025
+
+AC Pin Currents:
+Ir                         591.082p              605.072p                0.001f
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R23                X2.R25                X2.R24
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       1.831E-025            6.692E-039            6.694E-039
+
+AC Pin Currents:
+Ir                           0.001f            1.157E-019            1.157E-019
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R27                X2.R28                X2.R32
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       3.025E-056            3.025E-056            9.818E-093
+
+AC Pin Currents:
+Ir                       7.778E-027            7.779E-027            1.401E-047
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R31                X2.R11                X2.R18
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                                0                0.031f               302.51n
+
+AC Pin Currents:
+Ir                                0                7.864f               77.783u
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R33                X2.R10                X2.R47
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                          13.236p            1.353E-021              102.064n
+
+AC Pin Currents:
+Ir                         514.518n                0.052f               45.181u
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R46                X2.R45                X2.R43
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                          32.788n              123.681p              129.345p
+
+AC Pin Currents:
+Ir                           8.098u              497.355n              508.615n
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                     X2.R9                 X2.R7                 X2.R6
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       5.849E-020            8.274E-040            7.896E-040
+
+AC Pin Currents:
+Ir                          10.816n            4.068E-026            3.974E-026
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                     X2.R8                X2.R89                 X2.R5
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                          12.941m            8.274E-028            8.311E-043
+
+AC Pin Currents:
+Ir                          160.88m               40.679f            4.077E-020
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R60                 X2.R3                X2.R59
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       8.274E-034            9.786E-071            7.896E-034
+
+AC Pin Currents:
+Ir                       4.068E-020            1.399E-041            3.974E-020
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                     X2.R4                X2.R88              X2.R_PSR
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                       7.931E-043            7.896E-028            1.744E-032
+
+AC Pin Currents:
+Ir                       3.983E-020               39.738f                0.006f
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                     X2.R2                 X2.R1              X2.R_CMR
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                                0            9.630E-032               15.052n
+
+AC Pin Currents:
+Ir                                0               13.878f                5.487u
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R53                X2.R52                X2.R35
+Using model:         X2.R_NOISELESS        X2.R_NOISELESS        X2.R_NOISELESS
+
+Power AC Terms:
+PD                           0.031f               12.722f                 7.93p
+
+AC Pin Currents:
+Ir                           7.864f              159.513f               39.824u
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                    X2.R34           X2.XI_NN.R1           X2.XI_NN.R2
+Using model:         X2.R_NOISELESS                    NA                    NA
+
+Power AC Terms:
+PD                          19.402p                     0                     0
+
+AC Pin Currents:
+Ir                          62.294u                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:               X2.XI_NN.R3           X2.XI_NN.R4           X2.XI_NN.R5
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:               X2.XI_NN.R6           X2.XI_NN.R7           X2.XI_NP.R1
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:               X2.XI_NP.R2           X2.XI_NP.R3           X2.XI_NP.R4
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:               X2.XI_NP.R5           X2.XI_NP.R6           X2.XI_NP.R7
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                X2.XE_N.R1            X2.XE_N.R2            X2.XE_N.R3
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                X2.XE_N.R4            X2.XE_N.R5            X2.XE_N.R6
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                X2.XE_N.R7
+
+Power AC Terms:
+PD                                0
+
+AC Pin Currents:
+Ir                                0
+
+Device Variables:
+tc1                          0.000 
+tc2                          0.000 
+
+
+
+AC values for Capacitor (Mag)
+=============================
+Instance:                       C29                   CDC                X2.C14
+
+Power AC Terms:
+PS                         183.983p               39.148p                1.423n
+
+AC Pin Currents:
+Ic                         157.284u               72.552u              123.407n
+
+Device Variables:
+ic                           0.000                14.087m                0.000 
+
+
+Instance:                    X2.C28                X2.C27                X2.C25
+
+Power AC Terms:
+PS                       1.311E-033            1.311E-033               26.467f
+
+AC Pin Currents:
+Ic                       4.199E-019            4.199E-019              106.431p
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                    X2.C20                X2.C26                X2.C23
+
+Power AC Terms:
+PS                           1.087n               15.948n                7.976n
+
+AC Pin Currents:
+Ic                           4.274u              369.475n              184.762n
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                    X2.C16                X2.C15             X2.C_DIFF
+
+Power AC Terms:
+PS                       9.320E-033            4.013E-034                3.102u
+
+AC Pin Currents:
+Ic                           0.001f            1.465E-019               40.847u
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                    X2.C19                X2.C17                X2.C18
+
+Power AC Terms:
+PS                           8.696f            8.696E-047              869.585f
+
+AC Pin Currents:
+Ic                          34.194p            3.419E-027              341.942p
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                     X2.C9                 X2.C8                 X2.C6
+
+Power AC Terms:
+PS                       1.969E-050                0.002f            1.231E-020
+
+AC Pin Currents:
+Ic                       5.145E-029              514.518f               40.679f
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                     X2.C5                X2.C11                X2.C10
+
+Power AC Terms:
+PS                       1.174E-020            4.499E-046            4.500E-046
+
+AC Pin Currents:
+Ic                          39.738f            7.778E-027            7.779E-027
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                    X2.C12                 X2.C7                X2.C13
+
+Power AC Terms:
+PS                       6.601E-093               44.996n                1.969p
+
+AC Pin Currents:
+Ic                       9.421E-048               77.783u              514.518n
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                    X2.C24                 X2.C4                 X2.C3
+
+Power AC Terms:
+PS                         151.813n              870.039p            5.563E-035
+
+AC Pin Currents:
+Ic                          45.181u               10.816n            2.735E-021
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                     X2.C1                 X2.C2              X2.C_CMN
+
+Power AC Terms:
+PS                       6.579E-051            5.308E-035                4.158n
+
+AC Pin Currents:
+Ic                       9.406E-022            2.672E-021                1.057u
+
+Device Variables:
+ic                           0.000                 0.000                 0.000 
+
+
+Instance:                  X2.C_CMP
+
+Power AC Terms:
+PS                           1.711u
+
+AC Pin Currents:
+Ic                          21.448u
+
+Device Variables:
+ic                           0.000 
+
+
+
+AC values for S (Mag)
+=====================
+Instance:                   X2.SW11               X2.SW10                 X2.S5
+Using model:         X2.S_VSWITCH_1        X2.S_VSWITCH_2        X2.S_VSWITCH_3
+
+Power AC Terms:
+PD                          11.535f                11.85f               12.722f
+
+AC Pin Currents:
+ISource                    151.891f              156.027f              159.513f
+
+
+Instance:                     X2.S4                 X2.S2                 X2.S3
+Using model:         X2.S_VSWITCH_4        X2.S_VSWITCH_5        X2.S_VSWITCH_6
+
+Power AC Terms:
+PD                           0.031f                0.031f               12.722f
+
+AC Pin Currents:
+ISource                      7.864f                7.864f              159.513f
+
+
+Instance:                X2.SOR_SWP            X2.SOR_SWN                 X2.S1
+Using model:         X2.S_VSWITCH_7        X2.S_VSWITCH_8        X2.S_VSWITCH_9
+
+Power AC Terms:
+PD                            0.02f                 0.02f                1.784f
+
+AC Pin Currents:
+ISource                      6.245f                6.245f               59.733f
+
+
+Instance:                     X2.S7                 X2.S6
+Using model:        X2.S_VSWITCH_10       X2.S_VSWITCH_11
+
+Power AC Terms:
+PD                           0.031f                0.031f
+
+AC Pin Currents:
+ISource                      7.864f                7.864f
+
+
+
+AC values for Function Source (Mag)
+===================================
+Instance:       X2.XVCCS_LIM_ZO.G1     X2.XVCCS_LIM_2.G1     X2.XVCCS_LIM_1.G1
+
+Power AC Terms:
+PG                          3.733m                1.293u              117.347u
+
+AC Pin Currents:
+ISource                    86.408m                5.086m                15.32u
+
+
+Instance:             X2.XIQPOS.G1          X2.XIQNEG.G1       X2.XCL_AMP.GVO+
+
+Power AC Terms:
+PG                      5.353E-051            5.353E-038            2.928E-043
+
+AC Pin Currents:
+ISource                 7.653E-022                7.653n            7.653E-022
+
+
+Instance:          X2.XCL_AMP.GVO-       X2.XGR_AMP.GVO+       X2.XGR_AMP.GVO-
+
+Power AC Terms:
+PG                         29.285p            1.293E-039               12.934u
+
+AC Pin Currents:
+ISource                     7.653u            5.086E-020                5.086m
+
+
+Instance:            X2.XGR_SRC.G1         X2.XCL_SRC.G1    X2.XCLAWP.E_$$G1$$
+
+Power AC Terms:
+PG                          1.293u               30.987n                     0
+
+AC Pin Currents:
+ISource                     5.086m                7.653u                     0
+
+
+Instance:       X2.XCLAWN.E_$$G1$$     X2.XCLAW_AMP.GVO+     X2.XCLAW_AMP.GVO-
+
+Power AC Terms:
+PG                               0            6.692E-039            6.694E-039
+
+AC Pin Currents:
+ISource                          0            1.157E-019            1.157E-019
+
+
+Instance:          X2.XCLAW_SRC.G1     X2.XOL_SENSE.GSW+      X2.XVCM_CLAMP.G1
+
+Power AC Terms:
+PG                      2.975E-026                     0               12.941m
+
+AC Pin Currents:
+ISource                 1.196E-022            4.194E-045               160.88m
+
+
+
+AC values for SPICE Poly (Mag)
+==============================
+Instance:              X2.G_ADJUST             X2.GVCCS8             X2.GVCCS7
+
+Power AC Terms:
+PG                        281.307u               22.581u               22.581u
+
+AC Pin Currents:
+ISource                     23.72m                 6.72m                 6.72m
+
+
+Instance:                X2.GVCCS6             X2.GVCCS5           X2.G_AOL_ZO
+
+Power AC Terms:
+PG                        126.481f                3.729m                5.623m
+
+AC Pin Currents:
+ISource                   508.615p               86.359m              106.051m
+
+
+Instance:                X2.GVCCS2             X2.GVCCS1                 X2.G2
+
+Power AC Terms:
+PG                      1.841E-028            1.608E-029                0.175f
+
+AC Pin Currents:
+ISource                    19.188f                5.671f              591.082p
+
+
+Instance:                    X2.G3                 X2.H2                 X2.H3
+
+Power AC Terms:
+PG                          0.183f            1.311E-033            1.311E-033
+
+AC Pin Currents:
+ISource                   605.072p            4.199E-019            4.199E-019
+
+
+Instance:                    X2.H1                 X2.E5                 X2.E4
+
+Power AC Terms:
+PG                         13.382p              305.838n              182.933n
+
+AC Pin Currents:
+ISource                   514.518n               77.783u               45.181u
+
+
+Instance:                    X2.G9                 X2.G8                X2.G15
+
+Power AC Terms:
+PG                          2.014n              123.681p              129.345p
+
+AC Pin Currents:
+ISource                   497.355n              497.355n              508.615n
+
+
+Instance:                    X2.E1                X2.G17                X2.G16
+
+Power AC Terms:
+PG                      1.576E-034                     0                     0
+
+AC Pin Currents:
+ISource                    22.525u                     0                     0
+
+
+Instance:                 X2.G_PSR              X2.G_CMR           X2.XI_NN.E1
+
+Power AC Terms:
+PG                      1.745E-032               15.052n                     0
+
+AC Pin Currents:
+ISource                     0.006f                5.487u                     0
+
+
+Instance:              X2.XI_NN.E2           X2.XI_NN.G1           X2.XI_NP.E1
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                     0                     0
+
+
+Instance:              X2.XI_NP.E2           X2.XI_NP.G1            X2.XE_N.E1
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                     0                     0
+
+
+Instance:               X2.XE_N.E2            X2.XE_N.E3
+
+Power AC Terms:
+PG                               0                     0
+
+AC Pin Currents:
+ISource                          0               12.222f
+
+
+
+AC values for SPICE Source (Mag)
+================================
+Instance:                       V1                    V2                    VS
+
+Power AC Terms:
+PG                               0                     0               90.213u
+
+AC Pin Currents:
+ISource                   174.819f                7.653n              180.425u
+
+
+Instance:                  X2.I_OS                X2.I_B              X2.V_GRP
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                     0                     0
+
+
+Instance:                 X2.V_GRN             X2.V_ISCP             X2.V_ISCN
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                     0                     0
+
+
+Instance:                 X2.V_ORN                X2.V11              X2.V_ORP
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                6.246f                     0
+
+
+Instance:                   X2.V12                 X2.V4            X2.VCM_MIN
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                     6.246f               52.018n            6.013E-026
+
+
+Instance:               X2.VCM_MAX                X2.I_Q               X2.V_OS
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                 1.560E-025                     0               12.222f
+
+
+Instance:              X2.XI_NN.I1           X2.XI_NN.I2           X2.XI_NP.I1
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                     0                     0
+
+
+Instance:              X2.XI_NP.I2            X2.XE_N.I1            X2.XE_N.I2
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                     0                     0
+
+
+
+AC values for Table Source (Mag)
+================================
+Instance:             X2.XCLAWP.G1          X2.XCLAWN.G1
+
+Power AC Terms:
+PG                          0.175f                0.183f
+
+AC Pin Currents:
+ISource                   591.082p              605.072p
+
+
