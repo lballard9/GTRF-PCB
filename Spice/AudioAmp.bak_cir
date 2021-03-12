@@ -95,7 +95,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=1237
+Used=1239
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -119,8 +119,8 @@ Pin="Out",a,9,3,-3,-3
 Name=Resistor
 Definition=Resistor
 Shape=Resistor
-Mask=6913
-Used=844
+Mask=6401
+Used=848
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -142,7 +142,7 @@ WarningFormat=3
 GridTextFormulaFormat=3
 Window Placement in Transient Analysis=0,1, -1,-1, -8,-31, 18,-12,949,597
 Window Placement in AC Analysis=2,3, -1,-1, -8,-31, 52,52,1781,483
-Window Placement in DC Analysis=2,3, -1,-1, -8,-31, 918,2,1951,585
+Window Placement in DC Analysis=0,1, -1,-1, -8,-31, -2,4,870,605
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -159,7 +159,7 @@ Show Grid Text=True
 
 [Comp]
 Name=Voltage Source
-Px=552,96
+Px=552,104
 Rot=3
 
 [Attr]
@@ -202,12 +202,12 @@ Style=256
 
 [Comp]
 Name=Ground
-Px=552,96
+Px=552,104
 Rot=7
 
 [Comp]
 Name=Voltage Source
-Px=736,104
+Px=736,112
 Rot=3
 
 [Attr]
@@ -225,38 +225,36 @@ V
 
 [Comp]
 Name=Ground
-Px=736,104
+Px=736,112
 Rot=7
 
 [Wire]
-Pxs=464,224,656,224
+Pxs=552,40,552,56
 
 [Wire]
-Pxs=552,32,552,48
+Pxs=552,40,608,40
 
 [Wire]
-Pxs=552,32,608,32
+Pxs=736,40,736,64
 
 [Wire]
-Pxs=736,32,736,56
+Pxs=736,40,784,40
 
 [Wire]
-Pxs=736,32,784,32
-
-[Wire]
-Pxs=784,32,792,32
+Pxs=784,40,792,40
 
 [Comp]
 Name=LMV116
-Px=736,176
+Px=736,400
+Rot=4
 
 [Attr]
-ON=51,34,PART
+ON=51,-48,PART
 V=X3
 Style=8192
 
 [Attr]
-ON=51,48,NAME
+ON=51,-62,NAME
 V=LMV116
 
 [Attr]
@@ -264,45 +262,37 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=712,224,712,272
+Pxs=464,400,736,400
 
 [Wire]
-Pxs=712,272,744,272
+Pxs=808,376,840,376
 
 [Wire]
-Pxs=712,224,736,224
+Pxs=768,408,768,432
 
 [Wire]
-Pxs=832,200,832,272
+Pxs=768,320,768,328
 
 [Wire]
-Pxs=808,200,832,200
-
-[Wire]
-Pxs=768,232,768,256
-
-[Wire]
-Pxs=768,144,768,152
-
-[Wire]
-Pxs=768,152,768,168
+Pxs=768,328,768,344
 
 [Comp]
 Name=Ground
-Px=736,176
-Rot=6
+Px=680,272
+Rot=3
 
 [Comp]
 Name=Resistor
-Px=656,224
+Px=680,272
+Rot=1
 
 [Attr]
-ON=18,6,PART
+ON=8,11,PART
 V=R91
 Style=8192
 
 [Attr]
-ON=18,20,RESISTANCE
+ON=8,25,RESISTANCE
 V=1k
 Style=8192
 
@@ -310,12 +300,9 @@ Style=8192
 ON=0,0,PACKAGE
 V
 
-[Wire]
-Pxs=704,224,712,224
-
 [Comp]
 Name=Resistor
-Px=744,272
+Px=752,272
 
 [Attr]
 ON=18,6,PART
@@ -324,22 +311,16 @@ Style=8192
 
 [Attr]
 ON=18,20,RESISTANCE
-V=10k
+V=3.3k
 Style=8192
 
 [Attr]
 ON=0,0,PACKAGE
 V
 
-[Wire]
-Pxs=792,272,832,272
-
-[Wire]
-Pxs=832,200,936,200
-
 [Comp]
 Name=Resistor
-Px=1064,152
+Px=1064,328
 Rot=2
 
 [Attr]
@@ -358,7 +339,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=1064,200
+Px=1064,376
 Rot=2
 
 [Attr]
@@ -377,7 +358,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=1152,96
+Px=1152,272
 Rot=2
 
 [Attr]
@@ -396,7 +377,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=1080,248
+Px=1080,424
 Rot=3
 
 [Attr]
@@ -415,7 +396,7 @@ V
 
 [Comp]
 Name=LMV116
-Px=1096,200
+Px=1096,376
 Rot=4
 
 [Attr]
@@ -432,64 +413,52 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=952,152,968,152
+Pxs=952,328,968,328
 
 [Wire]
-Pxs=1064,152,1096,152
+Pxs=1064,328,1096,328
 
 [Wire]
-Pxs=1064,200,1080,200
+Pxs=1064,376,1080,376
 
 [Wire]
-Pxs=1080,200,1096,200
+Pxs=1080,376,1096,376
 
 [Comp]
 Name=Ground
-Px=1080,248
+Px=1080,424
 Rot=7
 
 [Wire]
-Pxs=1064,96,1064,152
+Pxs=1064,272,1064,328
 
 [Wire]
-Pxs=1064,96,1104,96
+Pxs=1064,272,1104,272
 
 [Wire]
-Pxs=1152,96,1232,96
+Pxs=1152,272,1232,272
 
 [Wire]
-Pxs=1232,96,1232,176
+Pxs=1232,272,1232,352
 
 [Wire]
-Pxs=1168,176,1232,176
+Pxs=1168,352,1232,352
 
 [Wire]
-Pxs=1128,128,1128,136
+Pxs=1128,304,1128,312
 
 [Wire]
-Pxs=1128,208,1128,232
+Pxs=1128,384,1128,408
 
 [Wire]
-Pxs=1128,240,1136,240
+Pxs=1128,416,1136,416
 
 [Wire]
-Pxs=968,152,1016,152
-
-[Wire]
-Pxs=1128,136,1128,144
-
-[Wire]
-Pxs=1128,232,1128,240
-
-[Wire]
-Pxs=1232,176,1288,176
-
-[Wire]
-Pxs=1288,176,1344,176
+Pxs=1232,352,1304,352
 
 [Comp]
 Name=Voltage Source
-Px=464,328
+Px=464,504
 Rot=3
 
 [Attr]
@@ -552,42 +521,75 @@ Style=256
 
 [Comp]
 Name=Ground
-Px=464,328
+Px=464,504
 Rot=7
 
 [Wire]
-Pxs=464,224,464,280
+Pxs=464,400,464,456
+
+[Wire]
+Pxs=840,376,1016,376
+
+[Wire]
+Pxs=680,320,680,352
+
+[Wire]
+Pxs=680,352,712,352
+
+[Wire]
+Pxs=712,272,712,352
+
+[Wire]
+Pxs=712,272,752,272
+
+[Wire]
+Pxs=712,352,736,352
+
+[Wire]
+Pxs=800,272,840,272
+
+[Wire]
+Pxs=840,272,840,376
+
+[Wire]
+Pxs=968,328,1016,328
+
+[Wire]
+Pxs=1128,312,1128,320
+
+[Wire]
+Pxs=1128,408,1128,416
+
+[Wire]
+Pxs=1304,352,1344,352
 
 [Comp]
 Name=Resistor
-Px=936,248
-Rot=3
+Px=1344,352
+Rot=1
 
 [Attr]
-ON=-32,-25,PART
+ON=8,11,PART
 V=R98
 Style=8192
 
 [Attr]
-ON=-32,-39,RESISTANCE
-V=330
+ON=8,25,RESISTANCE
+V=50k
 Style=8192
 
 [Attr]
 ON=0,0,PACKAGE
 V
 
-[Wire]
-Pxs=936,200,1016,200
-
 [Comp]
 Name=Ground
-Px=936,248
+Px=1344,400
 Rot=7
 
 [Grid Text]
 Text=".define Vin 1.2"
-Px=408,104
+Px=408,280
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -595,7 +597,7 @@ CBorder=None
 
 [Grid Text]
 Text="VCC"
-Px=608,32
+Px=608,40
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -603,15 +605,7 @@ CBorder=None
 
 [Grid Text]
 Text="VEE"
-Px=784,32
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="VEE"
-Px=768,256
+Px=784,40
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -619,7 +613,15 @@ CBorder=None
 
 [Grid Text]
 Text="VCC"
-Px=768,152
+Px=768,432
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VEE"
+Px=768,328
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -627,7 +629,7 @@ CBorder=None
 
 [Grid Text]
 Text="Vout"
-Px=1288,176
+Px=1304,352
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -635,7 +637,7 @@ CBorder=None
 
 [Grid Text]
 Text="VCC"
-Px=968,152
+Px=968,328
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -643,7 +645,7 @@ CBorder=None
 
 [Grid Text]
 Text="VEE"
-Px=1128,136
+Px=1128,312
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -651,7 +653,7 @@ CBorder=None
 
 [Grid Text]
 Text="VCC"
-Px=1128,232
+Px=1128,408
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -665,7 +667,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1.3333333333333333
+Scale=0.66666666666666663
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -853,9 +855,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=300,0
-Scale 3=1.3333333333333333
-Px=1343,223
+SB 3=611,157
+Scale 3=0.66666666666666663
+Px=777,293
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1429,7 +1431,7 @@ Name="MAIN"
 
 [DC]
 WinID=3
-Window Placement=2,3, -1,-1, -8,-31, 918,2,1951,585
+Window Placement=0,1, -1,-1, -8,-31, 878,2,1911,599
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -2096,10 +2098,10 @@ AliasID=1
 XExp=DCINPUT1
 YExp=v(vout)
 XRng=1.14,0.28
-YRng=-4.915,-4.91625
+YRng=1,-4
 Options=LINEARX,LINEARY
 Range Grid X=0.172
-Range Grid Y=0.00025
+Range Grid Y=1
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
