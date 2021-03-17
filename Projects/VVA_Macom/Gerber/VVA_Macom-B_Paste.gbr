@@ -1,0 +1,25 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,(5.1.9)-1*%
+%TF.CreationDate,2021-03-16T19:24:25-04:00*%
+%TF.ProjectId,VVA_Macom,5656415f-4d61-4636-9f6d-2e6b69636164,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Paste,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (5.1.9)-1) date 2021-03-16 19:24:25*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10R,4.200000X1.750000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,Jout1*%
+X155425800Y-80817200D03*
+X155425800Y-86467200D03*
+%TD*%
+%TO.C,JIn1*%
+X133600800Y-86467200D03*
+X133600800Y-80817200D03*
+%TD*%
+M02*
