@@ -1,0 +1,995 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.4 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***     AC Analysis of CE-CC FB Amp - BFU790 SiGe input - BRF193A output     ***
+***                          3/22/2021 10:21:41 PM                           ***
+********************************************************************************
+Limits
+======
+Frequency Range          Log 10G,100k
+Number of Points         10001
+Temperature              List 17
+Maximum Change %         5
+Noise Input              VG
+Noise Output             Vout
+Run Options              Normal
+State Variables          Zero
+Operating Point          On
+Auto Scale Ranges        Off
+Accumulate Plots         Off
+Ignore Expression Errors Off
+
+
+*****************************************************
+***                Temperature=17                 ***
+*****************************************************
+
+Temperature=17
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC           5.000   VOUTR         0.000   VINR          0.000  
+4             0.000   5             0.000   VIN           0.000  
+VOUT          0.000   8           872.617m  9             1.894  
+10          228.708u  11          253.802u  12            2.733  
+VCE1          2.733   14            2.733   VO            1.894  
+16            2.728   17            2.733   18           82.155m 
+19          872.617m  20            1.894   21          228.708u 
+22          253.802u  23            1.894   24            2.733  
+25            2.728   26            2.733   27           82.155m 
+28            2.733   29            2.723   30            2.723  
+31            2.733   32            2.733   33            2.733  
+34            2.723   35            2.723   Q1.11         2.733  
+Q1.22       872.617m  Q1.33        82.155m  Q1.24       872.617m 
+Q1.12         2.733   Q1.25       872.617m  Q1.23        82.155m 
+Q1.13         2.733   Q1.14        82.155m  Q1.28         2.733  
+Q1.15         2.733   X1.11         2.733   X1.22       872.617m 
+X1.33        82.155m  X1.24       872.617m  X1.12         2.733  
+X1.25       872.617m  X1.23        82.155m  X1.13         2.733  
+X1.14        82.155m  X1.28         2.733   X1.15         2.733  
+Q2.10         2.723   Q2.20         5.000   Q2.30         1.894  
+Q2.100        2.723   Q2.200        5.000   Q2.300        1.894  
+X2.10         2.723   X2.20         5.000   X2.30         1.894  
+X2.100        2.723   X2.200        5.000   X2.300        1.894  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current  Inductor     Current  Inductor     Current 
+C4.LS    -4.066E-020  R1.LS        88.255u  L8            4.574m 
+L9            4.574m  L10           5.076m  R11.LS        0.000  
+C7.LS         0.000   R13.LS        0.222f  L17           5.076m 
+L18           5.076m  R24.LS       22.783m  R47.LS      250.917u 
+L33           4.574m  REQ3.LS      12.690m  C43.LS    6.776E-020 
+R72.LS       88.255u  L42           4.574m  L43           4.574m 
+L44           5.076m  R75.LS        0.222f  L46           5.076m 
+L47           5.076m  R76.LS       22.783m  C47.LS        0.028f 
+R77.LS      250.917u  R78.LS        4.574m  L48           4.574m 
+R81.LS       12.690m  L50           4.574m  R84.LS        4.574m 
+L51           5.076m  R90.LS        4.574m  R91.LS        4.574m 
+R92.LS        4.574m  L56           4.574m  R93.LS        4.574m 
+C58.LS    1.084E-019  L60           4.574m  L61           4.574m 
+L62           5.076m  L63           0.000   L64           0.028f 
+R95.LS     -250.917u  L65           5.076m  L66           5.076m 
+R98.LS     -250.917u  R104.LS       0.012f  R105.LS      -0.007f 
+R106.LS       0.000   L67          -0.007f  L68       6.074E-051 
+R109.LS       4.574m  R110.LS       4.574m  R111.LS       4.574m 
+R113.LS       4.574m  R114.LS       0.000   R115.LS  -5.421E-020 
+R116.LS      12.690m  R117.LS      12.690m  Q1.LB2X     -88.255u 
+Q1.LC2X     -22.783m  Q1.LB1       88.255u  Q1.LB2      -88.255u 
+Q1.LC1       22.783m  Q1.LC2      -22.783m  Q1.LE1      -22.871m 
+X1.LB2X     -88.255u  X1.LC2X     -22.783m  X1.LB1       88.255u 
+X1.LB2      -88.255u  X1.LC1       22.783m  X1.LC2      -22.783m 
+X1.LE1      -22.871m  Q2.LBI      250.917u  Q2.LCI       25.129m 
+Q2.LEI      -25.380m  Q2.LBO      250.917u  Q2.LCO       25.129m 
+Q2.LEO      -25.380m  X2.LBI      250.917u  X2.LCI       25.129m 
+X2.LEI      -25.380m  X2.LBO      250.917u  X2.LCO       25.129m 
+X2.LEO      -25.380m 
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1.Q1             X1.Q1             Q2.Q1             X2.Q1
+Using model:       Q1.CHIP_790       X1.CHIP_790         Q2.BFR193         X2.BFR193
+
+Beta Terms:
+BETADC                258.146           258.146           100.150           100.150 
+BETAAC                251.294           251.294            90.649            90.649 
+
+Capacitance Terms:
+CPI                     3.767p            3.767p           19.729p           19.729p
+CMU                   451.511f          451.511f           36.251f           36.251f
+CBX                     0.000             0.000           640.567f          640.567f
+CJS                     2.221p            2.221p            0.000             0.000 
+
+Conductance Terms:
+GM                    883.271m          883.271m          954.012m          954.012m
+
+Current Terms:
+IB                     88.255u           88.255u          250.917u          250.917u
+IC                     22.783m           22.783m           25.129m           25.129m
+
+Resistance Terms:
+RPI                   284.504           284.504            95.019            95.019 
+RX                    110.626m          110.626m            1.594             1.594 
+RO                    449.478           449.478           846.032           846.032 
+
+Voltage Terms:
+VBE                   790.461m          790.461m          829.171m          829.171m
+VBC                    -1.860            -1.860            -2.277            -2.277 
+VCE                     2.651             2.651             3.106             3.106 
+
+Frequency Terms:
+FT                     33.323G           33.323G            7.441G            7.441G
+
+Power DC Terms:
+PD                     60.464m           60.464m           78.251m           78.251m
+PS                      0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ib                     88.255u           88.255u          250.917u          250.917u
+Ic                     22.783m           22.783m           25.129m           25.129m
+Ie                    -22.871m          -22.871m          -25.380m          -25.380m
+Is                      0.000             0.000             0.000             0.000 
+
+Condition:
+State                      LIN               LIN               LIN               LIN
+
+Device Variables:
+area                   30.000            30.000             1.000             1.000 
+vbe                     0.000             0.000             0.000             0.000 
+vce                     0.000             0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                   RLR               RGR            VGR.RS                RG
+V                        0.000             0.000             0.000             0.000 
+Power DC Terms:
+PD                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ir                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                    RL             C4.RS                R1             L8.RS
+Using model:          NOISELESS                NA         RMOD_0603                NA
+V                        0.000             0.000             4.127           228.708u
+Power DC Terms:
+PD                       0.000             0.000           364.261u            0.000 
+
+DC Pin Currents:
+Ir                       0.000             0.000            88.255u            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                 L9.RS            L10.RS               R11             C7.RS
+Using model:                 NA                NA     RMOD_0603_NGP                NA
+V                      228.708u          253.802u          -56.843f            0.000 
+Power DC Terms:
+PD                       0.000             0.000         9.791E-030            0.000 
+
+DC Pin Currents:
+Ir                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                   R13            L17.RS            L18.RS               R24
+Using model:          RMOD_0603                NA                NA         RMOD_0603
+V                        0.000           253.802u          253.802u            2.267 
+Power DC Terms:
+PD                       0.000             0.000             0.000            51.647m
+
+DC Pin Currents:
+Ir                       0.222f            0.000             0.000            22.783m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                   R47            L33.RS              REQ3            C43.RS
+Using model:          RMOD_0603                NA         RMOD_0603                NA
+V                        2.272           228.708u            1.894             0.000 
+Power DC Terms:
+PD                     570.088u            0.000            24.036m            0.000 
+
+DC Pin Currents:
+Ir                     250.917u            0.000            12.690m            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                   R72            L42.RS            L43.RS            L44.RS
+Using model:          RMOD_0603                NA                NA                NA
+V                        4.127           228.708u          228.708u          253.802u
+Power DC Terms:
+PD                     364.261u            0.000             0.000             0.000 
+
+DC Pin Currents:
+Ir                      88.255u            0.000             0.000             0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                   R75            L46.RS            L47.RS               R76
+Using model:          RMOD_0603                NA                NA         RMOD_0603
+V                        0.000           253.802u          253.802u            2.267 
+Power DC Terms:
+PD                       0.000             0.000             0.000            51.647m
+
+DC Pin Currents:
+Ir                       0.222f            0.000             0.000            22.783m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                C47.RS               R77               R78            L48.RS
+Using model:                 NA         RMOD_0603         RMOD_0603                NA
+V                        0.000             2.272            81.926m          228.708u
+Power DC Terms:
+PD                       0.000           570.088u          374.745u            0.000 
+
+DC Pin Currents:
+Ir                       0.000           250.917u            4.574m            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                   R81            L50.RS               R84            L51.RS
+Using model:          RMOD_0603                NA         RMOD_0603                NA
+V                        1.894           228.708u           81.926m          253.802u
+Power DC Terms:
+PD                      24.036m            0.000           374.745u            0.000 
+
+DC Pin Currents:
+Ir                      12.690m            0.000             4.574m            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                   R90               R91               R92            L56.RS
+Using model:          RMOD_0603         RMOD_0603         RMOD_0603                NA
+V                       81.926m           81.926m           81.926m          228.708u
+Power DC Terms:
+PD                     374.745u          374.745u          374.745u            0.000 
+
+DC Pin Currents:
+Ir                       4.574m            4.574m            4.574m            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                   R93            C58.RS            L60.RS            L61.RS
+Using model:          RMOD_0603                NA                NA                NA
+V                       81.926m            0.000           228.708u          228.708u
+Power DC Terms:
+PD                     374.745u            0.000             0.000             0.000 
+
+DC Pin Currents:
+Ir                       4.574m            0.000             0.000             0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                L62.RS               R95            L65.RS            L66.RS
+Using model:                 NA         RMOD_0603                NA                NA
+V                      253.802u           -4.494m          253.802u          253.802u
+Power DC Terms:
+PD                       0.000             1.128u            0.000             0.000 
+
+DC Pin Currents:
+Ir                       0.000          -250.917u            0.000             0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                   R98              R104              R105              R106
+Using model:          RMOD_0603     RMOD_0603_NGP     RMOD_0603_NGP     RMOD_0603_NGP
+V                       -4.494m            3.997f            0.000             0.000 
+Power DC Terms:
+PD                       1.128u        4.841E-032            0.000             0.000 
+
+DC Pin Currents:
+Ir                    -250.917u            0.012f           -0.007f            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                L67.RS            L68.RS              R109              R110
+Using model:                 NA                NA         RMOD_0603         RMOD_0603
+V                        0.000             0.000            81.926m           81.926m
+Power DC Terms:
+PD                       0.000             0.000           374.745u          374.745u
+
+DC Pin Currents:
+Ir                       0.000             0.000             4.574m            4.574m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                  R111              R113              R114              R115
+Using model:          RMOD_0603         RMOD_0603         RMOD_0603         RMOD_0603
+V                       81.926m           81.926m            0.000             0.000 
+Power DC Terms:
+PD                     374.745u          374.745u            0.000             0.000 
+
+DC Pin Currents:
+Ir                       4.574m            4.574m            0.000        -5.421E-020
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                  R116              R117           Q1.RB2X           Q1.RC2X
+Using model:          RMOD_0603         RMOD_0603                NA                NA
+V                        1.894             1.894             0.000             0.444f
+Power DC Terms:
+PD                      24.036m           24.036m            0.000         1.879E-031
+
+DC Pin Currents:
+Ir                      12.690m           12.690m            0.000             0.423f
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:               Q1.RBC2           Q1.RBC1           Q1.RBE2           Q1.RCE2
+V                        0.000             0.444f            0.000             0.000 
+Power DC Terms:
+PD                       0.000         2.304E-034            0.000             0.000 
+
+DC Pin Currents:
+Ir                       0.000             0.001f            0.000             0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:               X1.RB2X           X1.RC2X           X1.RBC2           X1.RBC1
+V                        0.000             0.000             0.000             0.444f
+Power DC Terms:
+PD                       0.000             0.000             0.000         2.304E-034
+
+DC Pin Currents:
+Ir                       0.000             0.000             0.000             0.001f
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:               X1.RBE2           X1.RCE2
+V                        0.000             0.000 
+Power DC Terms:
+PD                       0.000             0.000 
+
+DC Pin Currents:
+Ir                       0.000             0.000 
+
+Device Variables:
+tc1                      0.000             0.000 
+tc2                      0.000             0.000 
+
+
+
+Operating Point for Devices of Type Inductor
+============================================
+Instance:                 C4.LS             R1.LS                L8                L9
+Using model:                 NA                NA              VMOD              VMOD
+V                        0.000             0.000             0.000        -2.711E-020
+Power DC Terms:
+PS                       0.000             0.000             0.000        -1.240E-022
+
+DC Pin Currents:
+Il                       0.000             0.000             4.574m            4.574m
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   L10            R11.LS             C7.LS            R13.LS
+Using model:               VMOD                NA                NA                NA
+V                        0.000             0.000             0.000            -0.222f
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       5.076m            0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   L17               L18            R24.LS            R47.LS
+Using model:               VMOD              VMOD                NA                NA
+V                        0.000             0.000             0.000             0.000 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       5.076m            5.076m            0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   L33           REQ3.LS            C43.LS            R72.LS
+Using model:               VMOD                NA                NA                NA
+V                   -2.711E-020           -0.222f           -0.222f            0.000 
+Power DC Terms:
+PS                  -1.240E-022            0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       4.574m            0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   L42               L43               L44            R75.LS
+Using model:               VMOD              VMOD              VMOD                NA
+V                        0.000             0.000             0.000            -0.222f
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       4.574m            4.574m            5.076m            0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   L46               L47            R76.LS            C47.LS
+Using model:               VMOD              VMOD                NA                NA
+V                        0.000             0.000             0.000             0.000 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       5.076m            5.076m            0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                R77.LS            R78.LS               L48            R81.LS
+Using model:                 NA                NA              VMOD                NA
+V                        0.000             0.000             0.000            -0.222f
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       0.000             0.000             4.574m            0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   L50            R84.LS               L51            R90.LS
+Using model:               VMOD                NA              VMOD                NA
+V                   -2.711E-020            0.014f            0.000             0.000 
+Power DC Terms:
+PS                  -1.240E-022            0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       4.574m            0.000             5.076m            0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                R91.LS            R92.LS               L56            R93.LS
+Using model:                 NA                NA              VMOD                NA
+V                        0.000             0.000             0.000             0.014f
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       0.000             0.000             4.574m            0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                C58.LS               L60               L61               L62
+Using model:                 NA              VMOD              VMOD              VMOD
+V                       -0.111f       -2.711E-020            0.000             0.000 
+Power DC Terms:
+PS                       0.000        -1.240E-022            0.000             0.000 
+
+DC Pin Currents:
+Il                       0.000             4.574m            4.574m            5.076m
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   L63               L64            R95.LS               L65
+Using model:                 NA                NA                NA              VMOD
+V                        0.000            -0.444f            0.000             0.000 
+Power DC Terms:
+PS                       0.000        -1.233E-032            0.000             0.000 
+
+DC Pin Currents:
+Il                       0.000             0.028f            0.000             5.076m
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   L66            R98.LS           R104.LS           R105.LS
+Using model:               VMOD                NA                NA                NA
+V                        0.000             0.000             0.000             3.553f
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       5.076m            0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               R106.LS               L67               L68           R109.LS
+Using model:                 NA    LMOD_0603_150N    LMOD_0603_150N                NA
+V                        0.000             3.553f            0.000             0.000 
+Power DC Terms:
+PS                       0.000        -2.465E-032            0.000             0.000 
+
+DC Pin Currents:
+Il                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               R110.LS           R111.LS           R113.LS           R114.LS
+V                        0.014f            0.000             0.014f            0.000 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               R115.LS           R116.LS           R117.LS           Q1.LB2X
+V                        0.000            -0.222f           -0.222f            0.000 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                       0.000             0.000             0.000           -88.255u
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               Q1.LC2X            Q1.LB1            Q1.LB2            Q1.LC1
+V                        0.444f            0.000             0.111f            0.000 
+Power DC Terms:
+PS                      -0.010f            0.000        -9.798E-021            0.000 
+
+DC Pin Currents:
+Il                     -22.783m           88.255u          -88.255u           22.783m
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                Q1.LC2            Q1.LE1           X1.LB2X           X1.LC2X
+V                        6.661f            0.000             0.000             0.000 
+Power DC Terms:
+PS                      -0.152f            0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                     -22.783m          -22.871m          -88.255u          -22.783m
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                X1.LB1            X1.LB2            X1.LC1            X1.LC2
+V                        0.000             0.111f           -0.444f           10.658f
+Power DC Terms:
+PS                       0.000        -9.798E-021           -0.010f           -0.243f
+
+DC Pin Currents:
+Il                      88.255u          -88.255u           22.783m          -22.783m
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                X1.LE1            Q2.LBI            Q2.LCI            Q2.LEI
+V                        0.000             0.000             0.000             0.222f
+Power DC Terms:
+PS                       0.000             0.000             0.000            -0.006f
+
+DC Pin Currents:
+Il                     -22.871m          250.917u           25.129m          -25.380m
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                Q2.LBO            Q2.LCO            Q2.LEO            X2.LBI
+V                        0.000             0.000             0.000             0.000 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Il                     250.917u           25.129m          -25.380m          250.917u
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                X2.LCI            X2.LEI            X2.LBO            X2.LCO
+V                        0.000             0.222f            0.000             0.000 
+Power DC Terms:
+PS                       0.000            -0.006f            0.000             0.000 
+
+DC Pin Currents:
+Il                      25.129m          -25.380m          250.917u           25.129m
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                X2.LEO
+V                        0.000 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Il                     -25.380m
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C4             R1.CP                C5            R11.CP
+Using model:          CMOD_0603                NA                NA                NA
+V                      872.617m            4.127             1.894           -56.843f
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                  -4.066E-020            0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                    C7            R13.CP            R24.CP               C16
+Using model:          CMOD_0603                NA                NA                NA
+V                       -1.860             0.000             2.267             5.000 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   C23            R47.CP           REQ3.CP               C43
+Using model:                 NA                NA                NA         CMOD_0603
+V                       -5.063m            2.272             1.894           872.617m
+Power DC Terms:
+PS                       0.000             0.000             0.000        -1.505E-035
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000         6.776E-020
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                R72.CP               C44            R75.CP            R76.CP
+V                        4.127             1.894             0.000             2.267 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   C46               C47            R77.CP            R78.CP
+Using model:                 NA         CMOD_0603                NA                NA
+V                        5.000            -5.063m            2.272            81.926m
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.028f            0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                R81.CP            R84.CP            R90.CP            R91.CP
+V                        1.894            81.926m           81.926m           81.926m
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                R92.CP            R93.CP               C58               C63
+Using model:                 NA                NA         CMOD_0603                NA
+V                       81.926m           81.926m           -1.860           872.617m
+Power DC Terms:
+PS                       0.000             0.000        -1.204E-035            0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000         1.084E-019            0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   C64               C67            R95.CP               C72
+V                      872.617m            1.894            -4.494m            2.728 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   C74               C76               C77               C82
+V                        2.728             2.733             2.733             1.894 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                R98.CP           R104.CP           R105.CP           R106.CP
+V                       -4.494m            3.997f            0.000             0.000 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   C83               C84            L67.CP            L68.CP
+V                        2.733             2.733             3.553f            0.000 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               R109.CP           R110.CP           R111.CP           R113.CP
+V                       81.926m           81.926m           81.926m           81.926m
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               R114.CP           R115.CP               C85               C86
+V                        0.000             0.000             2.723             2.723 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   C87           R116.CP           R117.CP               C88
+V                       82.155m            1.894             1.894             2.723 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                   C89           Q1.CBE1           Q1.CBE2           Q1.CCE1
+V                        2.723           790.461m          790.461m            2.651 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               Q1.CCE2           Q1.CBC1           Q1.CBC2           X1.CBE1
+V                        2.651            -1.860             1.860           790.461m
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               X1.CBE2           X1.CCE1           X1.CCE2           X1.CBC1
+V                      790.461m            2.651             2.651            -1.860 
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:               X1.CBC2            Q2.CCB            Q2.CCE            Q2.CBE
+V                        1.860            -2.277             3.106          -829.171m
+Power DC Terms:
+PS                       0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000             0.000 
+
+
+Instance:                X2.CCB            X2.CCE            X2.CBE
+V                       -2.277             3.106          -829.171m
+Power DC Terms:
+PS                       0.000             0.000             0.000 
+
+DC Pin Currents:
+Ic                       0.000             0.000             0.000 
+
+Device Variables:
+ic                       0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                   VGR
+Using model:                 RG
+V                        0.000 
+Power DC Terms:
+PG                       0.000 
+
+DC Pin Currents:
+ISource                  0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                  VDC                VG             L8.V1             L9.V1
+V                       5.000             0.000        -2.711E-020            0.000 
+Power DC Terms:
+PG                    482.510m            0.000         1.240E-022            0.000 
+
+DC Pin Currents:
+ISource               -96.502m            0.000             4.574m            4.574m
+
+
+Instance:               L10.V1            L17.V1            L18.V1            L33.V1
+V                  -2.711E-019            0.000             0.000             0.000 
+Power DC Terms:
+PG                  1.376E-021            0.000             0.000             0.000 
+
+DC Pin Currents:
+ISource                 5.076m            5.076m            5.076m            4.574m
+
+
+Instance:               L42.V1            L43.V1            L44.V1            L46.V1
+V                   1.626E-019            0.000        -2.711E-019            0.000 
+Power DC Terms:
+PG                 -7.439E-022            0.000         1.376E-021            0.000 
+
+DC Pin Currents:
+ISource                 4.574m            4.574m            5.076m            5.076m
+
+
+Instance:               L47.V1            L48.V1            L50.V1            L51.V1
+V                       0.000             0.000             0.000             0.000 
+Power DC Terms:
+PG                      0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+ISource                 5.076m            4.574m            4.574m            5.076m
+
+
+Instance:               L56.V1            L60.V1            L61.V1            L62.V1
+V                       0.000             0.000             0.000             0.000 
+Power DC Terms:
+PG                      0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+ISource                 4.574m            4.574m            4.574m            5.076m
+
+
+Instance:               L65.V1            L66.V1            L67.V1            L68.V1
+V                       0.000             0.000             0.000             0.000 
+Power DC Terms:
+PG                      0.000             0.000             0.000             0.000 
+
+DC Pin Currents:
+ISource                 5.076m            5.076m            0.000             0.000 
+
+

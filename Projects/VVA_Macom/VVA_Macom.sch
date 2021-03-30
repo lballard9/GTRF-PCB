@@ -36,8 +36,6 @@ F 3 "~" H 5275 2325 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5275 2525 5275 2625
-Wire Wire Line
 	5275 2800 5200 2800
 $Comp
 L power:GND #PWR0101
@@ -157,20 +155,6 @@ Wire Wire Line
 Wire Wire Line
 	4825 3450 5200 3450
 $Comp
-L Device:CP CC3
-U 1 1 604ACBFC
-P 5125 2625
-F 0 "CC3" H 5243 2671 50  0000 L CNN
-F 1 "10u" H 5243 2580 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 5163 2475 50  0001 C CNN
-F 3 "~" H 5125 2625 50  0001 C CNN
-	1    5125 2625
-	0    -1   -1   0   
-$EndComp
-Connection ~ 5275 2625
-Wire Wire Line
-	5275 2625 5275 2800
-$Comp
 L power:GND #PWR?
 U 1 1 604AEFDD
 P 4975 2625
@@ -181,4 +165,20 @@ F 3 "" H 4975 2625 50  0001 C CNN
 	1    4975 2625
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5275 2525 5275 2625
+$Comp
+L Device:C CC3
+U 1 1 6052A3AA
+P 5125 2625
+F 0 "CC3" V 5377 2625 50  0000 C CNN
+F 1 ".47u" V 5286 2625 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5163 2475 50  0001 C CNN
+F 3 "~" H 5125 2625 50  0001 C CNN
+	1    5125 2625
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5275 2625
+Wire Wire Line
+	5275 2625 5275 2800
 $EndSCHEMATC
